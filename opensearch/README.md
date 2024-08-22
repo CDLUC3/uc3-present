@@ -41,6 +41,7 @@
 
 - We realized that OpenSearch is a great visualization tool
 - for OUR DATA, not just our logs
+
 ----
 
 ## As we explored data in OpenSearch
@@ -170,3 +171,11 @@
 ---
 
 ## Open Search Community Engagement
+
+---
+
+## Helpful Resources for OpenSearch
+
+---
+
+## Thank You
