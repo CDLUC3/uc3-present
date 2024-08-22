@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+
+  build:
+    on-failure: ABORT
+    commands:
+    - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin ${ECR_REGISTRY}
+    - cd opensearch
+    - docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
+    - docker-compose up
+    - aws s3 rm --recursive s3://${S3CFBUCKET}/present/opensearch
+    - aws s3 cp --recursive opensearch s3://${S3CFBUCKET}/present/opensearch
+    - aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/opensearch/* --region us-east-1
