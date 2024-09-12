@@ -31,6 +31,15 @@ CDL has 4 active programs:
 
 ---
 
+## The Log4J incident
+
+Raised the priority to improve our logging systems to 
+- be able to patch and address security vulnerabilities
+- inconsistent logging across our microservices
+- distributed environment
+
+---
+
 ## Why Opensearch?
 
 ----
