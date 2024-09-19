@@ -14,7 +14,9 @@ CDL was explicitly created as a central unit within the
 UC system with a mission to coordinate, leverage, and amplify the experience, expertise, and capabilities of its partners.
 
 ----
+
 CDL has 4 active programs:
+
 * Publishing & Special Collections
 * Discovery & Delivery
 * Collections & Licensing
