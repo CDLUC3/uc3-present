@@ -18,7 +18,7 @@ UC system with a mission to coordinate, leverage, and amplify the experience, ex
 
 ----
 
-CDL has 4 active programs:
+### CDL has 4 active programs:
 
 * Publishing & Special Collections
 * Discovery & Delivery
