@@ -48,10 +48,32 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## Application Logs
+## Needs
+- Find specific error events in logs 
+- Compute key event metrics
+- Discover unreported errors
+
+----
+
+## Find specific error events in logs 
 
 - High avalability services (multiple instances)
 - Eventual migration to containers - log directories will be less accessible
+
+----
+
+## Compute key event metrics
+
+- How widely are functions utilized
+- Frequency that functions are utilized
+- Metric totals
+
+----
+
+## Discover unreported errors
+
+- Aggregate counts by return code
+
 
 ----
 
@@ -188,7 +210,13 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## Demo Example
+## Merritt System - Cumulative  Totals
+
+- Calculate cumulative totals
+
+----
+
+## Merritt System - Object Health
 
 - [Video](https://youtu.be/QtLZpID_THo?si=kwwoDTJq_AsRauBU)
 
@@ -196,9 +224,13 @@ Raised the priority to improve our logging systems to
 
 ## EZID Demo
 
+- add video of search tool
+
 ----
 
-## Object Health Demo
+## DMP Tool - Open Search
+
+- add video if applicable
 
 ---
 
