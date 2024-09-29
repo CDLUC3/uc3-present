@@ -35,6 +35,10 @@ UC system with a mission to coordinate, leverage, and amplify the experience, ex
 
 ---
 
+## Background
+
+---
+
 ## The Log4J incident
 
 Raised the priority to improve our logging systems to 
@@ -42,16 +46,20 @@ Raised the priority to improve our logging systems to
 - inconsistent logging across our microservices
 - distributed environment
 
----
-
-## Why Opensearch?
-
 ----
 
-## Needs
+## Logging Needs
 - Find specific error events in logs 
 - Compute key event metrics
 - Discover unreported errors
+
+----
+
+## Discussion: Your Logging Needs
+
+---
+
+## Why Opensearch?
 
 ----
 
@@ -59,6 +67,10 @@ Raised the priority to improve our logging systems to
 
 - High avalability services (multiple instances)
 - Eventual migration to containers - log directories will be less accessible
+
+----
+
+## Screenshot - search for error message
 
 ----
 
@@ -70,10 +82,17 @@ Raised the priority to improve our logging systems to
 
 ----
 
+## Screenshot: Count Events, Count Totals
+
+----
+
 ## Discover unreported errors
 
 - Aggregate counts by return code
 
+----
+
+## Screenshot: Filter by Return Codes
 
 ----
 
@@ -82,6 +101,10 @@ Raised the priority to improve our logging systems to
 - CDL had Splunk
 - Developement teams did not have access
 - CDL is an AWS shop
+
+----
+
+## Discussion: Your Logging Tools
 
 ----
 
@@ -164,6 +187,10 @@ Raised the priority to improve our logging systems to
 - System logs
 - Logstash logs
 
+---- 
+
+## Discussion: what types of logs do you have
+
 ----
 
 ## Log Ingest Challengs
@@ -189,7 +216,24 @@ Raised the priority to improve our logging systems to
 
 ----
 
-- Demo: Merritt Dashboard
+## Demo: Merritt Application Logs
+
+- filters
+- timelines
+- selected columns
+- aggregate countts
+
+---- 
+
+## Discussion - How do you explore log files
+
+----
+
+## Demo: Load Balancer Logs
+
+----
+
+## Demo: Web Application Firewall Logs
 
 ----
 
@@ -210,9 +254,7 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## Merritt System - Cumulative  Totals
-
-- Calculate cumulative totals
+## Screenshot Merritt System Cumulative Totals
 
 ----
 
@@ -232,13 +274,24 @@ Raised the priority to improve our logging systems to
 
 - add video if applicable
 
+----
+
+## Discussion: What stories could you tell by visualizing your application data?
+
 ---
 
 ## Open Search Community Engagement
 
+- Slack channel
+- Community Meetings
+
 ---
 
 ## Helpful Resources for OpenSearch
+
+- summarize tutorial resources
+- Ashley's admin resources (index configuration)
+- Ashley's admin resources (hosting)
 
 ---
 
