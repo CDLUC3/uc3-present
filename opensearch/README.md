@@ -1,4 +1,4 @@
-# OpenSearch For The Productivity Win; Fostering across teams
+## OpenSearch For The Productivity Win; Fostering Adoption Across Teams
 
 ---
 
