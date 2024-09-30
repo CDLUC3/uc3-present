@@ -1,5 +1,7 @@
 ## OpenSearch For The Productivity Win; Fostering Adoption Across Teams
 
+- Marisa Strong, Development Team Manager
+- Terry Brady, Software Developer
 ---
 
 ## Who We Are
