@@ -11,5 +11,5 @@ phases:
     - docker-compose up
     - aws s3 rm --recursive s3://${S3CFBUCKET}/present/opensearch
     - aws s3 cp --recursive opensearch s3://${S3CFBUCKET}/present/opensearch
-    - aws s3 cp --recursive opensearch/images s3://${S3CFBUCKET}/present/opensearch/images
+    - aws s3 cp --recursive images s3://${S3CFBUCKET}/present/opensearch/images
     - aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/opensearch/* --region us-east-1
