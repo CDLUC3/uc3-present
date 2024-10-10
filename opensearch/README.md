@@ -145,7 +145,7 @@ Raised the priority to improve our logging systems to
 
 ----
 
-<img height="80%" alt="Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses" src="images/return_codes.png">
+<img width="60%" alt="Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses" src="images/return_codes.png">
 
 ----
 
