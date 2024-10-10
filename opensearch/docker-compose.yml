@@ -3,7 +3,7 @@ services:
     image: ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
     ports:
     - 8099:1948
-    command: ["/slides", "README.md", "--static", "/assets"]
+    command: ["/slides", "README.md", "--static", "/assets", "--glob", "**"]
     volumes:
     - ".:/slides"
     - "./opensearch:/assets"
