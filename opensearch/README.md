@@ -426,24 +426,20 @@ filter {
 
 ## Visualizing Logs
 
-<img height="80%" alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
-
 ----
 
 ## Log Dashboards
 
 - Visualization
+- Search box
 - Filters
 - Sample log records
 
 ----
 
-## Demo: Merritt Application Logs
+Demo: Merritt Application Logs
 
-- filters
-- timelines
-- selected columns
-- aggregate countts
+<img height="80%" alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
 
 ----
 
@@ -451,17 +447,20 @@ filter {
 
 ----
 
-## Demo: Load Balancer Logs
+Merritt Web Application Firewall Logs
+
+<img height="80%" alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
+
+---
+
+## What about Data (vs Logs)?
 
 ----
 
-## Demo: Web Application Firewall Logs
+Merritt cumulative ingests
 
-----
+<img height="80%" alt="Animated gif illustrating Merritt Cumulate Ingests by Campus since 2013.  User selects 'CDL' - California Digital Library as a Campus.  User scrolls through detailed widgets breaking down the composition of the collection." src="images/campus.gif">
 
-## What about Data?
-
-- Demo: Merritt cumulative ingests
 
 ----
 
