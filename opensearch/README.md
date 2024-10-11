@@ -57,7 +57,7 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## Discussion: Your Logging Needs
+## 💬 Discussion: Your Logging Needs
 
 ---
 
@@ -214,7 +214,8 @@ Merritt UI Return Code Counts... with analysis notes
 
 ----
 
-## Discussion: Your Logging Tools
+# 💬 
+## Discussion: What are Your Logging Tools?
 
 ----
 
@@ -359,7 +360,8 @@ filter {
 
 ----
 
-## Discussion: what types of logs do you have
+# 💬 
+## Discussion: what types of logs do you have?
 
 ----
 
@@ -443,7 +445,8 @@ Demo: Merritt Application Logs
 
 ----
 
-## Discussion - How do you explore log files
+# 💬 
+## Discussion - How do you explore your log files?
 
 ----
 
@@ -516,6 +519,7 @@ More information on this project is available here.
 
 ----
 
+# 💬 
 ## Discussion: What stories could you tell by visualizing your application data?
 
 ---
