@@ -75,27 +75,54 @@ Raised the priority to improve our logging systems to
 
 ## What is OpenSearch?
 
-----
-
-## An OpenSource fork of Elastic
-
-- AWS is steering the development
+- https://opensearch.org/
 
 ----
 
-## An OpenSource for of the ELK Stack
-
-- Elastic
-- Logstash
-- Kibana
+## An OpenSource fork of Elasticsearch
 
 ----
 
-## OpenSearch
+## Elastic (corporation) created Elasticsearch
 
-- OpenSearch
-- Logstash
-- OpenSearch Dashboards
+- https://www.elastic.co/
+
+----
+
+## Elasticsearch
+
+- Search engine built on Apache Lucene
+- Core to the `ELK stack`
+
+----
+
+## ELK Stack
+
+- Elasticsearch (search engine)
+- Logstash (file ingestion)
+- Kibana (web interface)
+- https://aws.amazon.com/what-is/elk-stack/
+
+----
+
+## Elastic and AWS
+
+- Conflict with AWS
+- Elastic changed the licensing for ELK
+- AWS created OpenSearch
+- [Elastic changed the license again in 2024](https://www.elastic.co/blog/elasticsearch-is-open-source-again)
+
+----
+
+## OpenSearch - An Open Source Version of the ELK Stack
+
+----
+
+## ELK Equivalents
+
+- Elastic --> OpenSearch
+- Logstash --> Logstash
+- Kibana --> OpenSearch Dashboards
 
 ----
 
@@ -105,6 +132,10 @@ Raised the priority to improve our logging systems to
 - json standard way of generating logs
 - used in open telemetry initiatives
 - common language support
+
+----
+
+## What can we do with ELK / OpenSearch?
 
 ---
 
