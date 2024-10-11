@@ -57,8 +57,7 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## 💬 
-## Discussion: Your Logging Needs
+## 💬 Discussion: What are Your Logging Needs?
 
 ---
 
@@ -215,8 +214,7 @@ Merritt UI Return Code Counts... with analysis notes
 
 ----
 
-## 💬 
-## Discussion: What are Your Logging Tools?
+## 💬 Discussion: What are Your Logging Tools?
 
 ----
 
@@ -290,6 +288,10 @@ Sample Dashboard Bundled with OpenSearch: Flight Data
 - [Learning the Elastic Stack](https://www.linkedin.com/learning/learning-the-elastic-stack-2?u=76816210)
 - [Elastic Search in Depth](https://www.linkedin.com/learning/elasticsearch-in-depth?u=76816210)
 
+---
+
+# Learning OpenSearch Ingest
+
 ----
 
 ## Load sample log files into OpenSearch
@@ -361,8 +363,7 @@ filter {
 
 ----
 
-## 💬 
-## Discussion: what types of logs do you have?
+## 💬 Discussion: what types of logs do you have?
 
 ----
 
@@ -411,6 +412,11 @@ filter {
 
 - [Elastic Common Schema "ECS"](https://www.elastic.co/guide/en/ecs/current/ecs-principles-implementation.html)
 
+
+---
+
+# Learning "ECS"
+
 ----
 
 ## "ECS" Implementations for logs
@@ -424,6 +430,10 @@ filter {
 
 - https://opentelemetry.io/docs/what-is-opentelemetry/
 - We have not explored this yet
+
+---
+
+# Learning OpenSearch Visualization
 
 ----
 
@@ -519,8 +529,7 @@ More information on this project is available here.
 
 ----
 
-## 💬 
-## Discussion: What stories could you tell by visualizing your application data?
+## 💬 Discussion: What stories could you tell by visualizing your application data?
 
 ---
 
@@ -610,6 +619,9 @@ More information on this project is available here.
 
 # Open Search Community Engagement
 
+----
+
+## Community Resources
 - [OpenSearch Slack channel](https://opensearch.org/slack.html)
 - [Community Meetings](https://opensearch.org/events/calendar/2024/october/)
 - [GitHub Issues and Discussion](https://github.com/opensearch-project)
@@ -637,8 +649,7 @@ More information on this project is available here.
 
 ----
 
-## 💬 
-## Discussion: What are your thoughts about OpenSearch?
+## 💬 Discussion: What are your thoughts about OpenSearch?
 
 ---
 
