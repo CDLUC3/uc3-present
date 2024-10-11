@@ -426,7 +426,7 @@ filter {
 
 ## Visualizing Logs
 
-- Demo: Merritt Visualization
+<img height="80%" alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
 
 ----
 
