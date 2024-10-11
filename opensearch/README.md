@@ -5,7 +5,7 @@
 
 ---
 
-## Who We Are
+# Who We Are
 
 ----
 
@@ -37,9 +37,9 @@ UC system with a mission to coordinate, leverage, and amplify the experience, ex
 
 ---
 
-## Background
+# Background
 
----
+----
 
 ## The Log4J incident
 
@@ -57,11 +57,12 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## 💬 Discussion: Your Logging Needs
+## 💬 
+## Discussion: Your Logging Needs
 
 ---
 
-## Why Opensearch for Logs?
+# Why Opensearch for Logs?
 
 ----
 
@@ -74,13 +75,13 @@ Raised the priority to improve our logging systems to
 
 ---
 
-## What is OpenSearch?
-
-- https://opensearch.org/
+# What is OpenSearch?
 
 ----
 
-## An OpenSource fork of Elasticsearch
+## An Open Source fork of Elasticsearch
+
+- https://opensearch.org/
 
 ----
 
@@ -140,7 +141,7 @@ Raised the priority to improve our logging systems to
 
 ---
 
-## Log Exploration
+# Log Exploration
 
 ----
 
@@ -214,7 +215,7 @@ Merritt UI Return Code Counts... with analysis notes
 
 ----
 
-# 💬 
+## 💬 
 ## Discussion: What are Your Logging Tools?
 
 ----
@@ -233,7 +234,7 @@ Merritt UI Return Code Counts... with analysis notes
 
 ---
 
-## OpenSearch - Our Learning Process
+# OpenSearch - Our Learning Process
 
 ----
 
@@ -360,7 +361,7 @@ filter {
 
 ----
 
-# 💬 
+## 💬 
 ## Discussion: what types of logs do you have?
 
 ----
@@ -445,7 +446,7 @@ Demo: Merritt Application Logs
 
 ----
 
-# 💬 
+## 💬 
 ## Discussion - How do you explore your log files?
 
 ----
@@ -456,7 +457,7 @@ Merritt Web Application Firewall Logs
 
 ---
 
-## What about Data (vs Logs)?
+# What about Data (vs Logs)?
 
 ----
 
@@ -489,7 +490,6 @@ More information on this project is available here.
 
 ----
 
-
 ## EZID Demo
 
 - add video of search tool
@@ -502,7 +502,7 @@ More information on this project is available here.
 
 ---
 
-## Logs vs Data - Interesting Challenges
+# Logs vs Data - Interesting Challenges
 
 ----
 
@@ -519,12 +519,12 @@ More information on this project is available here.
 
 ----
 
-# 💬 
+## 💬 
 ## Discussion: What stories could you tell by visualizing your application data?
 
 ---
 
-## UC3 Team Collaboration and Process
+# UC3 Team Collaboration and Process
 
 ----
 
@@ -585,10 +585,6 @@ More information on this project is available here.
 
 ----
 
-## Generate visualizations to tell a story about data
-
-----
-
 ## Set shard standards and index standards
 
 ----
@@ -604,11 +600,15 @@ More information on this project is available here.
 
 ----
 
+## Generate visualizations to tell a story about data
+
+----
+
 ## Explore OpenSearch as a Search tool
 
 ---
 
-## Open Search Community Engagement
+# Open Search Community Engagement
 
 - [OpenSearch Slack channel](https://opensearch.org/slack.html)
 - [Community Meetings](https://opensearch.org/events/calendar/2024/october/)
@@ -625,7 +625,7 @@ More information on this project is available here.
 ----
 
 ## Sysadmin Best Practices
-- [AWS OpenSEarch Developer Guide](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html#bp-sharding-strategy)
+- [AWS OpenSearch Developer Guide](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html#bp-sharding-strategy)
 
 ----
 
@@ -635,8 +635,14 @@ More information on this project is available here.
 - We plan to manage these with git
 - [Sample script to load ndjson files to a dockerized version of dashboards](https://github.com/CDLUC3/opensearch-tutorial/blob/main/scripts/init-opensearch.sh)
 
+----
+
+## 💬 
+## Discussion: What are your thoughts about OpenSearch?
+
 ---
 
 ## Thank You
 - https://github.com/marisastrong
 - https://github.com/terrywbrady
+- https://uc3.cdlib.org/
