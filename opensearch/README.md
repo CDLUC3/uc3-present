@@ -461,29 +461,31 @@ Merritt cumulative ingests
 
 <img height="80%" alt="Animated gif illustrating Merritt Cumulate Ingests by Campus since 2013.  User selects 'CDL' - California Digital Library as a Campus.  User scrolls through detailed widgets breaking down the composition of the collection." src="images/campus.gif">
 
+----
+
+## Merritt Object Health
+
+- An analysis process is run against Merritt objects
+- Analysis is written as a rich JSON structure
+- Assertions/tests are run against the analysis
+- OpenSearch can filter for analysis results
 
 ----
 
-## OpenSearch as an AWS manage service (for data)
+Merritt Object Health Filtering
 
-- deploy to end users
-- different security challenges
-
----
-
-## UC3 Team Collaboration and Process
+<img height="80%" alt="Animated gif illustrating multiple filters being applied to a collection of Merritt Analysis Objects.  Once a subset of objects has been isolated, user explores the details fo a specific record." src="images/mrt_health.gif">
 
 ----
 
-## Screenshot Merritt System Cumulative Totals
+## Deep Dive - Merritt Object Health
+
+More information on this project is available here.
+
+- [Merritt Object Health - 13m Video](https://youtu.be/QtLZpID_THo?si=kwwoDTJq_AsRauBU)
 
 ----
 
-## Merritt System - Object Health
-
-- [Video](https://youtu.be/QtLZpID_THo?si=kwwoDTJq_AsRauBU)
-
-----
 
 ## EZID Demo
 
@@ -495,25 +497,142 @@ Merritt cumulative ingests
 
 - add video if applicable
 
+---
+
+## Logs vs Data - Interesting Challenges
+
+----
+
+## OpenSearch (Search and Dashboard) as an AWS managed service (for data)
+
+- deploy to end users
+- different security challenges
+
+----
+
+## OpenSearch (Search Only) as a search engine
+
+- embedded into a production application
+
 ----
 
 ## Discussion: What stories could you tell by visualizing your application data?
 
 ---
 
-## Open Search Community Engagement
+## UC3 Team Collaboration and Process
 
-- Slack channel
-- Community Meetings
+----
+
+## Ashley created prototype Docker configuration
+
+----
+
+## Terry loaded sample logs to prototype configuration
+
+----
+
+## Creation of sample logstash rules for very predictable files
+
+----
+
+## Create managed service deployment
+
+----
+
+## Load general logs for Merritt
+
+- alb
+- waf
+- apache
+- tomcat
+
+----
+
+## Learn the search tool
+
+----
+
+## Load general logs for other teams
+
+----
+
+## Learn about ECS
+
+----
+
+## Generate ECS log files for specific applications
+
+----
+
+## Load application log files
+
+----
+
+## Generate visualizations
+
+----
+
+## Generate dashboards
+
+----
+
+## Generate data files (vs logs) to be loaded to open search
+
+----
+
+## Generate visualizations to tell a story about data
+
+----
+
+## Set shard standards and index standards
+
+----
+
+## Set user groups and permissions for OpenSearch
+
+----
+
+## Set data retention policies by index
+
+- 30 days for logs
+- forever for data
+
+----
+
+## Explore OpenSearch as a Search tool
 
 ---
 
-## Helpful Resources for OpenSearch
+## Open Search Community Engagement
 
-- summarize tutorial resources
-- Ashley's admin resources (index configuration)
-- Ashley's admin resources (hosting)
+- [OpenSearch Slack channel](https://opensearch.org/slack.html)
+- [Community Meetings](https://opensearch.org/events/calendar/2024/october/)
+- [GitHub Issues and Discussion](https://github.com/opensearch-project)
+- [Conference](https://opensearch.org/events/opensearchcon/2024/north-america/index.html)
+
+----
+
+## Helpful Resources for OpenSearch
+- [OpenSearch Docs](https://opensearch.org/docs/latest/)
+- [Logstash](https://www.elastic.co/guide/en/logstash/current/index.html)
+- [Our Tutorial](https://github.com/CDLUC3/opensearch-tutorial)
+
+----
+
+## Sysadmin Best Practices
+- [AWS OpenSEarch Developer Guide](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html#bp-sharding-strategy)
+
+----
+
+## Other Things we Have Learned
+
+- You can export and import your visualizations and dashboards using the API (as ndjson files)
+- We plan to manage these with git
+- [Sample script to load ndjson files to a dockerized version of dashboards](https://github.com/CDLUC3/opensearch-tutorial/blob/main/scripts/init-opensearch.sh)
 
 ---
 
 ## Thank You
+- https://github.com/marisastrong
+- https://github.com/terrywbrady
