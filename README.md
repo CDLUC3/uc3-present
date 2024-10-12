@@ -12,3 +12,9 @@ brew install ffmpeg
 
 ffmpeg -i input.mov -r 24 output.gif
 ```
+
+### PDF Generation
+
+```
+docker run --rm -t --net=host -v .:/slides astefanutti/decktape https://merritt.uc3dev.cdlib.org/present/opensearch/README.html present.pdf
+```
