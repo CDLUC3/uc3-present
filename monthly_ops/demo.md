@@ -129,10 +129,6 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 ----
 
-<img height="80%" alt="Screen Shot of Capacity Planning Script used by the Merritt Team" src="images/cpscript.png">
-
-----
-
 ## Store/Ingest - subject to peak processing
 
 - Ingest service: download and validate
@@ -144,6 +140,8 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 - Identify peak processing
 ----
+
+Bytes Processed over 30 days
 
 <img height="80%" alt="Bytes ingested over a 30 day period with a significant peak on Sept 05" src="images/bytes.png">
 
@@ -238,17 +236,45 @@ Ingest Server - Memory Headroom
 
 ----
 
-## Learnings
+## Learnings - Capacity Planning
 
-- What to ignore
-  - server patching
-  - software releases
-  - known servcie downtimes
+----
+
+## Learnings - What to ignore
+- server patching
+- software releases
+- known service downtimes
+
+----
+
+## Learnings - Issues Resolved
+
+- IO Wait revealed
+  - need for optimized instance types
+  - replace EFS with ZFS
+
+----
+
+## Leanings - Continue to Watch
+
 - RAM - Available headoom
+  - Memory Leaks
 
 ---
 
+## Software Dependency Checks
+
+- Vulnerabilities in Code Repos
+- End of life for Code Frameworks
+- Obsolete versions of 3rd Party software
+
+----
+
 ## Software Dependency Review
+
+- The actual script resides in a private repository.  
+- A [sanitized version](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/routine_librato_checks.md) is provided here.
+  - _some non-public links have been obscured_
 
 ----
 
@@ -256,26 +282,30 @@ Ingest Server - Memory Headroom
 
 - Review
 - Evaluate severity
-
-----
-
-## Create Tickets
+- Assign tickets to resolve
 
 ----
 
 ## Review Feature Library Versions
 
 - Database
-- Queue
+- ZooKeeper
 - Apache Tika
 
 ----
 
 ## Review Language Version and End of Life
 
+- Ruby
+- Java
+
 ----
 
 ## Review Framework Versions and End of Life
+
+- Rails
+- Tomcat
+- jQuery
 
 ----
 
@@ -287,6 +317,8 @@ Ingest Server - Memory Headroom
 
 ## Review Build Tool Plugin Versions
 
+- Maven plugins
+
 ----
 
 ## Set Schedule for Next Review
@@ -294,6 +326,37 @@ Ingest Server - Memory Headroom
 ----
 
 ## Identify General Purpose Libraries with New Versions
+
+- we have identified a tool
+- we have not yet implemented this
+- we just completed a large migration
+
+----
+
+## Learnings Dependency Review
+
+----
+
+## Learnings
+
+- The information we needed was available online
+  - reference sites to search
+  - services/sites that push alerts to us
+
+----
+
+## Learnings
+
+- Some checks are OK to do quarterly or biannually
+  - we should note when the next review should occur
+
+----
+
+## Learnings
+
+- We have been rewarded by every effort we have made to 
+  - normalize builds
+  - consolidate dependency configuration
 
 ---
 
@@ -303,15 +366,42 @@ Ingest Server - Memory Headroom
 
 ## Consolidated Error Logs
 
+- We consolidated all of our logs in OpenSearch in 2023
+
+----
+
+## Consolidated Logs
+
+- Expedites investigation of a user-reported problem
+
+----
+
+## Consolidated Logs
+
+- Enables us to discover errors before they become user-reported problems
+
+----
+
+## Error Discovery
+
+- We rely on 
+  - OpenSearch Saved Searches
+  - OpenSearch Visualizations
+  - OpenSearch Dashboards
+  - Constantly refining our focus
+
 ----
 
 ## Dashboard Review
 
+- The actual script resides in a private repository.  
+- A [copy](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/dashboard_review.md) is provided here.
+
 ----
 
-## WAF Logs
+WAF Logs
 
-- Web Application Firewall
+- [Web Application Firewall Dashboard](images/waf.gif)
 
 ----
 
