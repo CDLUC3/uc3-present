@@ -1,0 +1,8 @@
+services:
+  reveal-md:
+    image: webpronl/reveal-md
+    ports:
+    - 8099:1948
+    command: ["/slides", "README.md", "--css", "format.css"]
+    volumes:
+    - ".:/slides"
