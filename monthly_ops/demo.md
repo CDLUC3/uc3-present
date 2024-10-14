@@ -125,7 +125,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 ## Our Meeting Script
 
 - The actual script resides in a private repository.  
-- A [sanitized version](routine_librato_checks.md) is provided here.
+- A [sanitized version](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/routine_librato_checks.md) is provided here.
 
 ----
 

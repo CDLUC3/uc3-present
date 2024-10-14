@@ -16,6 +16,8 @@ phases:
 
     - aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/opensearch/* --region us-east-1
 
+    - cd ..
+    
     - cd monthly_ops
     - docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
     - docker-compose up
