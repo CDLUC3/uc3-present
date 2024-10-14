@@ -22,7 +22,7 @@ phases:
     - docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
     - docker-compose up
     - aws s3 rm --recursive s3://${S3CFBUCKET}/present/monthly_ops || echo 'delete skipped'
-    - aws s3 cp --recursive opensearch s3://${S3CFBUCKET}/present/monthly_ops
+    - aws s3 cp --recursive monthly_ops s3://${S3CFBUCKET}/present/monthly_ops
     - aws s3 cp --recursive images s3://${S3CFBUCKET}/present/monthly_ops/images
 
     - aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/monthly_ops/* --region us-east-1
