@@ -1,6 +1,15 @@
 ## Adopting Monthly Operational Review Meetings as a Learning Exercise
 
-https://github.com/terrywbrady
+<img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
+
+https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/
+
+----
+
+## Adopting Monthly Operational Review Meetings as a Learning Exercise
+
+- Terry Brady, Software Developer
+  - https://github.com/terrywbrady
 
 ---
 
@@ -260,6 +269,13 @@ Ingest Server - Memory Headroom
 - RAM - Available headoom
   - Memory Leaks
 
+----
+
+## Discussion
+
+- How do your teams review server performance?
+- How do your teams perform capacity planning?
+
 ---
 
 ## Software Dependency Checks
@@ -358,6 +374,13 @@ Ingest Server - Memory Headroom
   - normalize builds
   - consolidate dependency configuration
 
+----
+
+## Discussion
+
+- How do your teams review software vulnerabilities?
+- How do your teams keep 3rd party software up to date?
+
 ---
 
 ## Error Logs
@@ -448,6 +471,12 @@ Capacity analysis using application logs
 - Identified uncontrolled client activity that was driving a need for additional resouces
   - 18T of assembled downloads per week!
 
+----
+
+## Discussion
+
+- How do your teams handle error logs?
+- Do you have a process to discover unreported errors?
 
 ---
 
@@ -499,6 +528,13 @@ Capacity analysis using application logs
 - Regular review builds confidence
 - We challenge ourselves to go deeper as we have solved the immediate issues
 
+----
+
+## Discussion
+
+- Do these ideas sound applicable to your environments?
+
+
 ---
 
 ## Where to go next
@@ -534,4 +570,6 @@ Capacity analysis using application logs
 
 ---
 
-## Discussion
+## Thank You
+- https://github.com/terrywbrady
+  - UCTech Slack: Terry Brady (UCOP-CDL)

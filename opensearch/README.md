@@ -1,5 +1,12 @@
 ## OpenSearch For The Productivity Win; Fostering Adoption Across Teams
 
+<img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/opensearch/README.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
+
+https://merritt.uc3dev.cdlib.org/present/opensearch/README.html
+----
+
+### OpenSearch For The Productivity Win; Fostering Adoption Across Teams
+
 - Marisa Strong, Development Team Manager
 - Terry Brady, Software Developer
 
@@ -655,5 +662,7 @@ More information on this project is available here.
 
 ## Thank You
 - https://github.com/marisastrong
+  - UCTech Slack: Marisa Strong (UCOP CDL)
 - https://github.com/terrywbrady
+  - UCTech Slack: Terry Brady (UCOP-CDL)
 - https://uc3.cdlib.org/
