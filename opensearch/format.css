@@ -4,8 +4,8 @@ pre.code-wrapper {
 }
 
 .pause-overlay {
-  background-image: url('images/qrcode_merritt.uc3dev.cdlib.org.png') !important;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-image: url('../images/qrcode_merritt.uc3dev.cdlib.org.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
 }
