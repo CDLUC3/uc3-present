@@ -265,7 +265,7 @@ RDS Performance Insights
 
 ----
 
-## Learnings - What to ignore
+## Learnings - What to be aware of in each review
 - server patching
 - software releases
 - known service downtimes
@@ -275,8 +275,8 @@ RDS Performance Insights
 ## Learnings - Issues Resolved
 
 - IO Wait revealed
-  - need for optimized instance types
-  - replace EFS with ZFS
+  - need for IO-optimized instance types
+  - replace AWS EFS with ZFS for better throughput
 
 ----
 
@@ -305,7 +305,7 @@ RDS Performance Insights
 ## Software Dependency Review
 
 - The actual script resides in a private repository.  
-- A [sanitized version](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/routine_librato_checks.md) is provided here.
+- A [sanitized version](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/dependency_scans.md) is provided here.
   - _some non-public links have been obscured_
 
 ----
@@ -320,7 +320,7 @@ RDS Performance Insights
 
 ## Review Feature Library Versions
 
-- Database
+- MySQL
 - ZooKeeper
 - Apache Tika
 
@@ -374,6 +374,7 @@ RDS Performance Insights
 - The information we needed was available online
   - reference sites to search
   - services/sites that push alerts to us
+- Some end of life dates have surprised us
 
 ----
 
@@ -455,6 +456,7 @@ WAF Logs
 
 ## User Interface Errors by return code
 
+<img height="80%" alt="Dashboard containing Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses along with an explanation of each return code" src="images/return_code_dashboard.png">
 
 ----
 
@@ -477,8 +479,8 @@ Capacity analysis using application logs
 
 ## Learnings - WAF
 
-- Rate limit attempts at malicious login
-- Limit resource-intensive queries from unauthenticated logic
+- Rate limit attempts to login to the site
+- Limit resource-intensive queries for unauthenticated users
 
 ----
 
