@@ -3,7 +3,7 @@ pre.code-wrapper {
   margin-left: -10%;
 }
 
-.reveal .pause-overlay {
+.pause-overlay {
   background-image: url('images/qrcode_merritt.uc3dev.cdlib.org.png') !important;
   background-repeat: no-repeat;
   background-size: contain;
