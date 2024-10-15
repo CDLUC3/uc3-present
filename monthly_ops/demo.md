@@ -1,9 +1,8 @@
 ## Adopting Monthly Operational Review Meetings as a Learning Exercise
 
 - Terry Brady, Software Developer
-  - https://github.com/terrywbrady
 
-https://github.com/CDLUC3/uc3-present
+https://github.com/terrywbrady
 
 ----
 
