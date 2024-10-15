@@ -1,15 +1,17 @@
-#### Adopting Monthly Operational Review Meetings as a Learning Exercise
-
-<img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
-
-https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/
-
-----
-
 ## Adopting Monthly Operational Review Meetings as a Learning Exercise
 
 - Terry Brady, Software Developer
   - https://github.com/terrywbrady
+
+https://github.com/CDLUC3/uc3-present
+
+----
+
+#### Adopting Monthly Operational Review Meetings as a Learning Exercise
+
+<img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
+
+https://github.com/CDLUC3/uc3-present
 
 ---
 
