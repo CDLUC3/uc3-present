@@ -312,6 +312,21 @@ Sample Dashboard Bundled with OpenSearch: Flight Data
 
 ----
 
+## Logstash Parsing
+
+```conf
+  grok {
+    pattern_definitions => { 
+      "ELB_REQUEST_LINE" => "(?:%{WORD:verb} %{ELB_URI:request}(?: HTTP/%{NUMBER:httpversion})?|%{DATA:rawrequest})"
+      "ELB_URIPATHPARAM" => "%{URIPATH:path}(?:%{URIPARAM:params})?"
+      "ELB_URI" => "%{URIPROTO:proto}://(?:%{USER}(?::[^@]*)?@)?(?:%{URIHOST:urihost})?(?:%{ELB_URIPATHPARAM})?"
+    }
+    match => [ "message", '%{TIMESTAMP_ISO8601:timestamp} %{NOTSPACE:elb} %{IP:clientip}:%{INT:clientport:int} (?:(%{IP:backendip}:?:%{INT:backendport:int})|-) %{NUMBER:request_processing_time:float} %{NUMBER:backend_processing_time:float} %{NUMBER:response_processing_time:float} %{INT:response:int} %{INT:backend_response:int} %{INT:received_bytes:int} %{INT:bytes:int} "%{ELB_REQUEST_LINE:req}" "%{DATA:user_agent_raw}" %{NOTSPACE:ssl_cipher} %{NOTSPACE:ssl_protocol} %{NOTSPACE:target_group_arn} %{QUOTEDSTRING:trace_id} "%{DATA:domain_name}" "%{DATA:chosen_cert_arn}" %{NUMBER:matched_rule_priority:int} %{TIMESTAMP_ISO8601:request_creation_time} "%{DATA:actions_executed}" "%{DATA:redirect_url}" "%{DATA:error_reason}" "%{DATA:misc_ip}" "%{DATA:misc_status}" "%{DATA:misc_a}" "%{DATA:misc_b}"']
+  }
+```
+
+----
+
 ## Date Normalization is Critical
 
 - Date/time filters are a primary filter in OpenSearch dashboard
