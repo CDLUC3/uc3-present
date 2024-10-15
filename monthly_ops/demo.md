@@ -1,4 +1,4 @@
-## Adopting Monthly Operational Review Meetings as a Learning Exercise
+#### Adopting Monthly Operational Review Meetings as a Learning Exercise
 
 <img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
 
