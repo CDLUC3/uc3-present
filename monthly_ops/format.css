@@ -2,3 +2,10 @@ pre.code-wrapper {
   width: 120%;
   margin-left: -10%;
 }
+
+.reveal .pause-overlay {
+  background-image: url('images/qrcode_merritt.uc3dev.cdlib.org.png') !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

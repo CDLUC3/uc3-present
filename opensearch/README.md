@@ -5,14 +5,6 @@
 
 https://github.com/CDLUC3/uc3-present
 
-----
-
-#### OpenSearch For The Productivity Win; Fostering Adoption Across Teams
-
-<img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/opensearch/README.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
-
-https://github.com/CDLUC3/uc3-present
-
 ---
 
 # Who We Are

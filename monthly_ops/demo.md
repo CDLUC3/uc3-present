@@ -4,14 +4,6 @@
 
 https://github.com/terrywbrady
 
-----
-
-#### Adopting Monthly Operational Review Meetings as a Learning Exercise
-
-<img height="80%" alt="QRCode for https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html#/" src="images/qrcode_merritt.uc3dev.cdlib.org.png">
-
-https://github.com/CDLUC3/uc3-present
-
 ---
 
 ## Presentation Purpose
@@ -535,14 +527,15 @@ Capacity analysis using application logs
 ## Beyond Our Team
 
 - Our manager appreciates the ability to dive into details with the team
-- Other folks from our departments have joined to observe the process
+- Folks beyond have joined to observe the process
+  - positive responses
 - This has given the intiative a nice boost
 
 ----
 
 ## Script
 
-- Script contains collecttive learning
+- Script contains collective learning
 - Regular review builds confidence
 - We challenge ourselves to go deeper as we have solved the immediate issues
 
@@ -576,7 +569,7 @@ Capacity analysis using application logs
 
 - What content is missing from our log files
 - What index keys are needed
-- What visualizations are needd
+- What visualizations are need
 
 ----
 
