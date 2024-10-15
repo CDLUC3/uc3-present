@@ -236,13 +236,28 @@ Ingest Server - Memory Headroom
 
 ## Database
 
+<img height="80%" alt="Graph of database CPU over the same 30 day period.  The graph shows very modest CPU usage" src="images/database.png">
+
+
 ----
 
 ## Audit - constant load
 
+<img height="80%" alt="Graph of audit service CPU over the same 30 day period.  The graph consistently high CPU usage" src="images/audit.png">
+
 ----
 
 ## Query Performance
+
+- Our system administrators have enabled RDS Performance Insights for the most recent 7 days 
+- Our query performance is quite stable at this time
+
+----
+
+RDS Performance Insights
+
+<img height="80%" alt="Graph of RDS Performance Insights over the past 7 days.  Graph shows consistent performance." src="images/rds_performance_insights.png">
+
 
 ----
 
