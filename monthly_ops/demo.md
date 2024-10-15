@@ -451,7 +451,7 @@ Capacity analysis using application logs
 
 ---
 
-## Process
+## Our Review Meeting Process
 
 - Review
 - Document action items as tickets
@@ -468,10 +468,36 @@ Capacity analysis using application logs
 
 ----
 
+## Meetings
+
+- An additional meeting is an interruption
+- Generally, we are glad we did it by the end
+- It is more fun when something went wrong during the month
+
+----
+
+## Team Member Feedback
+
+- Connects team members to Security 
+- Connects team members to Cost Information
+  - Cost review is handle by our DevOps engineer
+- Greater appeciation of what our logs can do
+
+----
+
+## Beyond Our Team
+
+- Our manager appreciates the ability to dive into details with the team
+- Other folks from our departments have joined to observe the process
+- This has given the intiative a nice boost
+
+----
+
 ## Script
 
 - Script contains collecttive learning
 - Regular review builds confidence
+- We challenge ourselves to go deeper as we have solved the immediate issues
 
 ---
 
@@ -481,7 +507,8 @@ Capacity analysis using application logs
 
 ## Capacity Planning
 
-- Covered pretty well
+- Covered pretty well at the server level
+- Key metric computations could be interesting
 
 ----
 
@@ -496,6 +523,14 @@ Capacity analysis using application logs
 - What content is missing from our log files
 - What index keys are needed
 - What visualizations are needd
+
+----
+
+## Fun Questions to Answer
+
+- What system functions require the most retries?
+- Can we graph periods of time where retries increase?
+- Can we graph retries required by cloud provider?
 
 ---
 
