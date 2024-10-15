@@ -397,15 +397,32 @@ Ingest Server - Memory Headroom
 - The actual script resides in a private repository.  
 - A [copy](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/dashboard_review.md) is provided here.
 
+
+----
+
+## Web Application Firewall (WAF) Logs
+
+- Make note of timeframes where errors may have been introduced by malicious activity
+- Idenitify categories of malicious activity
+
 ----
 
 WAF Logs
 
-- [Web Application Firewall Dashboard](images/waf.gif)
+<img height="80%" alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
+
+
+----
+
+## User Interface Errors by return code
+
 
 ----
 
 ## User Interface Errors
+
+<img height="80%" alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
+
 
 ----
 
@@ -413,9 +430,24 @@ WAF Logs
 
 ----
 
-## Future Growth
+Capacity analysis using application logs
 
-- Capacity analysis using application logs
+<img height="80%" alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
+
+----
+
+## Learnings - WAF
+
+- Rate limit attempts at malicious login
+- Limit resource-intensive queries from unauthenticated logic
+
+----
+
+## Leanings Capacity Analysis
+
+- Identified uncontrolled client activity that was driving a need for additional resouces
+  - 18T of assembled downloads per week!
+
 
 ---
 
