@@ -145,7 +145,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 Bytes Processed over 30 days
 
-<img height="80%" alt="Bytes ingested over a 30 day period with a significant peak on Sept 05" src="images/bytes.png">
+<img alt="Bytes ingested over a 30 day period with a significant peak on Sept 05" src="images/bytes.png">
 
 ----
 
@@ -171,25 +171,25 @@ Bytes Processed over 30 days
 
 Storage Server - CPU
 
-<img  height="80%" alt="Graph of CPU usage by Storage service over the same 30 day (Aug 11 to Sep 10) period with a peak in early Sept" src="images/store_cpu.png">
+<img  alt="Graph of CPU usage by Storage service over the same 30 day (Aug 11 to Sep 10) period with a peak in early Sept" src="images/store_cpu.png">
 
 ----
 
 Storage Server - IO Wait
 
-<img height="80%" alt="Graph of IO wait on the Storage service over the same 30 day period with a peak in early Sept" src="images/store_sar-io.png">
+<img alt="Graph of IO wait on the Storage service over the same 30 day period with a peak in early Sept" src="images/store_sar-io.png">
 
 ----
 
 Storage Server - NFS wait
 
-<img height="80%" alt="Graph of NFS wait on the Storage service over the same 30 day period with a peak in early Sept" src="images/store_sar-nfs.png">
+<img alt="Graph of NFS wait on the Storage service over the same 30 day period with a peak in early Sept" src="images/store_sar-nfs.png">
 
 ----
 
 Storage Server - Memory Headroom
 
-<img height="80%" alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory was constant" src="images/store_memory.png">
+<img alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory was constant" src="images/store_memory.png">
 
 ----
 
@@ -204,38 +204,38 @@ Storage Server - Memory Headroom
 
 Ingest Server - CPU 
 
-<img height="80%" alt="Graph of CPU usage by Ingest service over the same 30 day (Aug 11 to Sep 10) period with a peak in early Sept" src="images/ingest_cpu.png">
+<img alt="Graph of CPU usage by Ingest service over the same 30 day (Aug 11 to Sep 10) period with a peak in early Sept" src="images/ingest_cpu.png">
 
 ----
 
 Ingest Server - IO wait
 
-<img height="80%" alt="Graph of IO wait on the Ingest service over the same 30 day period with a peak in early Sept" src="images/ingest_sar.png">
+<img alt="Graph of IO wait on the Ingest service over the same 30 day period with a peak in early Sept" src="images/ingest_sar.png">
 
 ----
 
 Ingest Server - NFS wait
 
-<img height="80%" alt="Graph of NFS wait on the Ingest service over the same 30 day period with a peak in early Sept" src="images/ingest_sar_nfs.png">
+<img alt="Graph of NFS wait on the Ingest service over the same 30 day period with a peak in early Sept" src="images/ingest_sar_nfs.png">
 
 ----
 
 Ingest Server - Memory Headroom
 
-<img height="80%" alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory shows a gradual decline which is likely to be levelling off" src="images/ingest_ram_headroom.png">
+<img alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory shows a gradual decline which is likely to be levelling off" src="images/ingest_ram_headroom.png">
 
 ----
 
 ## Database
 
-<img height="80%" alt="Graph of database CPU over the same 30 day period.  The graph shows very modest CPU usage" src="images/database.png">
+<img alt="Graph of database CPU over the same 30 day period.  The graph shows very modest CPU usage" src="images/database.png">
 
 
 ----
 
 ## Audit - constant load
 
-<img height="80%" alt="Graph of audit service CPU over the same 30 day period.  The graph consistently high CPU usage" src="images/audit.png">
+<img alt="Graph of audit service CPU over the same 30 day period.  The graph consistently high CPU usage" src="images/audit.png">
 
 ----
 
@@ -248,7 +248,7 @@ Ingest Server - Memory Headroom
 
 RDS Performance Insights
 
-<img height="80%" alt="Graph of RDS Performance Insights over the past 7 days.  Graph shows consistent performance." src="images/rds_performance_insights.png">
+<img alt="Graph of RDS Performance Insights over the past 7 days.  Graph shows consistent performance." src="images/rds_performance_insights.png">
 
 
 ----
@@ -441,20 +441,20 @@ RDS Performance Insights
 
 WAF Logs
 
-<img height="80%" alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
+<img alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
 
 
 ----
 
 ## User Interface Errors by return code
 
-<img height="80%" alt="Dashboard containing Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses along with an explanation of each return code" src="images/return_code_dashboard.png">
+<img alt="Dashboard containing Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses along with an explanation of each return code" src="images/return_code_dashboard.png">
 
 ----
 
 ## User Interface Errors
 
-<img height="80%" alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
+<img alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
 
 
 ----
@@ -465,7 +465,7 @@ WAF Logs
 
 Capacity analysis using application logs
 
-<img height="80%" alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
+<img alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
 
 ----
 
