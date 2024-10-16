@@ -206,7 +206,7 @@ Merritt UI requests categorized by request type
 
 Merritt UI Return Code Counts
 
-<img width="60%" alt="Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses" src="images/return_codes.png">
+<img alt="Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses" src="images/return_codes.png">
 
 ----
 
