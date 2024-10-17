@@ -42,7 +42,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 - 1 Product Manager
 - 3 Software Developers
-- 1 DevOps engineer (supporting multiple teams)
+- 1 DevOps engineer (supporting multiple teams within our department)
 
 ----
 
@@ -51,7 +51,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 - Primarily software development (Java, Ruby, SQL)
 - One developer has a Systems Admin background
 - Our DevOps engineer has a Systems Admin background
-- CDL has 3 full-time Systems Administrators supporting multiple teams
+- CDL has 3 full-time Systems Administrators supporting multiple departments
 
 ----
 
@@ -106,7 +106,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 - Accomplish as much as we can
 - Figure it out together
 - Document learnings
-- Document a script the next session
+  - Build a script to follow in next session
 
 ----
 
@@ -276,6 +276,7 @@ RDS Performance Insights
 
 - RAM - Available headoom
   - Memory Leaks
+- Unrelease database connections
 
 ----
 
@@ -463,7 +464,17 @@ WAF Logs
 
 ----
 
-Capacity analysis using application logs
+Storage Service Errors
+
+<img alt="Date histogram of storage errors over the last 30 days showing 42 errors in the early part of the month" src="images/storage_errors.png">
+
+----
+
+## Capacity/Performance Analysis Using Log Data 
+
+----
+
+Bytes processed, computed from application logs
 
 <img alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
 
@@ -527,8 +538,8 @@ Capacity analysis using application logs
 ## Beyond Our Team
 
 - Our manager appreciates the ability to dive into details with the team
-- Folks beyond have joined to observe the process
-  - positive responses
+- Folks beyond our team have joined  us to observe the process
+  - complimentary responses
 - This has given the intiative a nice boost
 
 ----
@@ -536,6 +547,7 @@ Capacity analysis using application logs
 ## Script
 
 - Script contains collective learning
+  - Markdown is easy to edit
 - Regular review builds confidence
 - We challenge ourselves to go deeper as we have solved the immediate issues
 
@@ -578,6 +590,7 @@ Capacity analysis using application logs
 - What system functions require the most retries?
 - Can we graph periods of time where retries increase?
 - Can we graph retries required by cloud provider?
+- Can we quatify throughput by cloud provider?
 
 ---
 
