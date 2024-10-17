@@ -5,6 +5,8 @@
 
 https://github.com/CDLUC3/uc3-present
 
+Note:
+Marisa
 ----
 
 <iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
@@ -13,6 +15,8 @@ https://github.com/CDLUC3/uc3-present
 
 # Who We Are
 
+Note:
+Marisa
 ----
 
 ## California Digital Library (CDL)
@@ -45,6 +49,8 @@ UC system with a mission to coordinate, leverage, and amplify the experience, ex
 
 # Background
 
+Note:
+Marisa
 ----
 
 ## The Log4J incident
@@ -69,6 +75,9 @@ Raised the priority to improve our logging systems to
 
 # Why Opensearch for Logs?
 
+
+Note:
+Marisa
 ----
 
 ## Need for Consolidated Logging
@@ -82,6 +91,8 @@ Raised the priority to improve our logging systems to
 
 # What is OpenSearch?
 
+Note:
+Terry
 ----
 
 ## An Open Source fork of Elasticsearch
@@ -148,6 +159,9 @@ Raised the priority to improve our logging systems to
 
 # Log Exploration
 
+
+Note:
+Terry
 ----
 
 ## Find specific error events in logs 
@@ -240,6 +254,9 @@ Merritt UI Return Code Counts... with analysis notes
 
 # OpenSearch - Our Learning Process
 
+
+Note:
+Terry
 ----
 
 ## Docker distribution of OpenSearch
@@ -297,6 +314,9 @@ Sample Dashboard Bundled with OpenSearch: Flight Data
 ---
 
 # Learning OpenSearch Ingest
+
+Note:
+Terry
 
 ----
 
@@ -438,6 +458,9 @@ filter {
 
 # Learning "ECS"
 
+
+Note:
+Terry
 ----
 
 ## "ECS" Implementations for logs
@@ -455,6 +478,10 @@ filter {
 ---
 
 # Learning OpenSearch Visualization
+
+
+Note:
+Terry
 
 ----
 
@@ -490,6 +517,9 @@ Merritt Web Application Firewall Logs
 
 # What about Data (vs Logs)?
 
+
+Note:
+Terry
 ----
 
 Merritt cumulative ingests
@@ -525,16 +555,27 @@ More information on this project is available here.
 
 - add video of search tool
 
+
+Note:
+Marisa
+
 ----
 
 ## DMP Tool - Open Search
 
 - add video if applicable
 
+
+Note:
+Marisa
+
 ---
 
 # Logs vs Data - Interesting Challenges
 
+
+Note:
+Marisa
 ----
 
 ## OpenSearch (Search and Dashboard) as an AWS managed service (for data)
@@ -556,6 +597,9 @@ More information on this project is available here.
 
 # UC3 Team Collaboration and Process
 
+
+Note:
+Marisa
 ----
 
 ## Ashley created prototype Docker configuration
@@ -640,6 +684,9 @@ More information on this project is available here.
 
 # Open Search Community Engagement
 
+
+Note:
+Marisa
 ----
 
 ## Community Resources
@@ -680,3 +727,7 @@ More information on this project is available here.
 - https://github.com/terrywbrady
   - UCTech Slack: Terry Brady (UCOP-CDL)
 - https://uc3.cdlib.org/
+
+
+Note:
+Marisa
