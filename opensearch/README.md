@@ -19,14 +19,9 @@ Note:
 Marisa
 ----
 
-## California Digital Library (CDL)
+## California Digital Library 
 
-CDL provides transformative digital library services, grounded in campus partnerships and extended through external collaborations, that amplify the impact of the libraries, scholarship, and resources of the University of California. 
-
-----
-
-CDL was explicitly created as a central unit within the 
-UC system with a mission to coordinate, leverage, and amplify the experience, expertise, and capabilities of its partners.
+CDL provides transformative digital library services, partnering both with UC campuses and external collaborators, we amplify the impact of the libraries, scholarship, and resources of the University of California. 
 
 ----
 
@@ -41,9 +36,19 @@ UC system with a mission to coordinate, leverage, and amplify the experience, ex
 
 ## UC3
 
+The mission of University of California Curation Center (UC3) is to provide transformative preservation, curation, and research data management systems, services, and initiatives that sustain and promote open scholarship.
+
 ----
 
 ## UC3 Architecture
+
+<img alt="UC3 Application stacks" src="images/ezid-waf-screenshot_2.png">
+
+----
+
+## UC3 Architecture
+
+<img alt="UC3 Application stacks" src="images/UC3-Applications.png">
 
 ---
 
