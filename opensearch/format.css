@@ -9,3 +9,8 @@ pre.code-wrapper {
   background-size: contain !important;
   background-position: center !important;
 }
+
+iframe {
+  min-height: 600px;
+  width: 100%;
+}
