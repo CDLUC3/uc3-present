@@ -9,7 +9,7 @@ Note:
 Marisa
 ----
 
-<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" height="100%" width="100%" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ---
 
@@ -75,7 +75,7 @@ Raised the priority to improve our logging systems to
 
 Slido Word Cloud - Top use cases for log analysis?
 
-<iframe src="https://app.sli.do/event/jinWX26j29xcvvcwNiQKKc" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+<iframe src="https://app.sli.do/event/jinWX26j29xcvvcwNiQKKc" height="100%" width="100%" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ---
 
@@ -246,7 +246,7 @@ Merritt UI Return Code Counts... with analysis notes
 
 Slido Word Cloud - Which tools are you currently using for data collection and visualization?
 
-<iframe src="https://app.sli.do/event/jinWX26j29xcvvcwNiQKKc" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+<iframe src="https://app.sli.do/event/jinWX26j29xcvvcwNiQKKc" height="100%" width="100%" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ----
 
