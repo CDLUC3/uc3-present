@@ -61,7 +61,7 @@ Raised the priority to improve our logging systems to
 
 ## Logging Needs
 - Find specific error events in logs 
-- Compute key event metrics
+- Calculate metrics
 - Discover unreported errors
 
 ----
@@ -108,7 +108,7 @@ Terry
 ## Elasticsearch
 
 - Search engine built on Apache Lucene
-- Core to the `ELK stack`
+- Core to the **ELK stack**
 
 ----
 
@@ -144,14 +144,25 @@ Terry
 
 ## Other Concepts
 
-- Elastic Common Schema (ECS)
+- [Elastic Common Schema](https://www.elastic.co/guide/en/ecs/current/ecs-principles-implementation.html) (ECS)
   - json standard way of generating logs
   - used in open telemetry initiatives
  - common language support
 
 ----
 
-## What can we do with ELK / OpenSearch?
+## ECS Sample Fields
+
+- @timestamp
+- method: GET | PUT
+- status: 200 | 401 | 404 |500
+- path: /foo/bar
+- query: a=b&c=d
+- duration
+
+----
+
+## What can we do with ELK / OpenSearch Stack?
 
 ---
 
@@ -175,6 +186,26 @@ Isolating a single error with OpenSearch search.
 
 ----
 
+<img alt="Highlight search box on prior image" src="images/search1.png">
+
+----
+
+<img alt="Highlight date filter on prior image" src="images/search2.png">
+
+----
+
+<img alt="Highlight date histogram on prior image" src="images/search3.png">
+
+----
+
+<img alt="Highlight column headers on prior image" src="images/search4.png">
+
+----
+
+<img alt="Hightlight data result columns on prior image" src="images/search5.png">
+
+----
+
 Exploring the details of the error message (table view)
 
 <img alt="Exploring a sample mysql error in a table view" src="images/log_explore.png">
@@ -193,7 +224,7 @@ The larger context of the OpenSearch "Discovery" tool.
 
 ----
 
-## Compute key event metrics
+## Calculate metrics
 
 - How widely are functions utilized
 - Frequency that functions are utilized
@@ -202,7 +233,17 @@ The larger context of the OpenSearch "Discovery" tool.
 
 ----
 
-Cumulative bytes processed by the Merritt Storage service by function and storage provider
+## Storage Service calculates
+
+For each cloud provider...
+- Bytes added
+- Bytes updated
+- Bytes assembled and zipped
+- Bytes processed per millisecond
+
+----
+
+These calculations enable some useful visualizations
 
 <img alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
 
@@ -352,7 +393,7 @@ Terry
 
 ## Date Normalization is Critical
 
-- Date/time filters are a primary filter in OpenSearch dashboard
+- Date/time filters are a primary filter in OpenSearch dashboards
 - Discovery tool provids a date historgram for analysis
 
 ----
@@ -591,7 +632,7 @@ Note:
 Marisa
 ----
 
-## Ashley created prototype Docker configuration
+## DevOps engineer created prototype Docker configuration
 
 ----
 
@@ -689,7 +730,7 @@ Marisa
 ## Helpful Resources for OpenSearch
 - [OpenSearch Docs](https://opensearch.org/docs/latest/)
 - [Logstash](https://www.elastic.co/guide/en/logstash/current/index.html)
-- [Our Tutorial](https://github.com/CDLUC3/opensearch-tutorial)
+- [UC3 Team Tutorial](https://github.com/CDLUC3/opensearch-tutorial)
 
 ----
 

@@ -276,7 +276,7 @@ RDS Performance Insights
 
 - RAM - Available headoom
   - Memory Leaks
-- Unrelease database connections
+- Unreleased database connections
 
 ----
 
@@ -444,6 +444,12 @@ WAF Logs
 
 <img alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
 
+----
+
+## Learnings - WAF
+
+- Rate limit attempts to login to the site
+- Limit resource-intensive queries for unauthenticated users
 
 ----
 
@@ -457,6 +463,13 @@ WAF Logs
 
 <img alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
 
+----
+
+## Learnings - UI Errors
+
+- Stale database connections
+  - Retry logic
+  - Reset connections
 
 ----
 
@@ -477,13 +490,6 @@ Storage Service Errors
 Bytes processed, computed from application logs
 
 <img alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
-
-----
-
-## Learnings - WAF
-
-- Rate limit attempts to login to the site
-- Limit resource-intensive queries for unauthenticated users
 
 ----
 
@@ -530,7 +536,7 @@ Bytes processed, computed from application logs
 
 - Connects team members to Security 
 - Connects team members to Cost Information
-  - Cost review is handle by our DevOps engineer
+  - Cost review is handled by our DevOps engineer
 - Greater appeciation of what our logs can do
 
 ----
