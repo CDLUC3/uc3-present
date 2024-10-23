@@ -276,7 +276,7 @@ RDS Performance Insights
 
 - RAM - Available headoom
   - Memory Leaks
-- Unrelease database connections
+- Unreleased database connections
 
 ----
 
@@ -530,7 +530,7 @@ Bytes processed, computed from application logs
 
 - Connects team members to Security 
 - Connects team members to Cost Information
-  - Cost review is handle by our DevOps engineer
+  - Cost review is handled by our DevOps engineer
 - Greater appeciation of what our logs can do
 
 ----
