@@ -121,7 +121,7 @@ Terry
 ## Elasticsearch
 
 - Search engine built on Apache Lucene
-- Core to the `ELK stack`
+- Core to the **ELK stack**
 
 ----
 
@@ -157,14 +157,25 @@ Terry
 
 ## Other Concepts
 
-- Elastic Common Schema (ECS)
+- [Elastic Common Schema](https://www.elastic.co/guide/en/ecs/current/ecs-principles-implementation.html) (ECS)
   - json standard way of generating logs
   - used in open telemetry initiatives
  - common language support
 
 ----
 
-## What can we do with ELK / OpenSearch?
+## ECS Sample Fields
+
+- @timestamp
+- method: GET | PUT
+- status: 200 | 401 | 404 |500
+- path: /foo/bar
+- query: a=b&c=d
+- duration
+
+----
+
+## What can we do with ELK / OpenSearch Stack?
 
 ---
 
@@ -235,9 +246,9 @@ The larger context of the OpenSearch "Discovery" tool.
 
 ----
 
-## Merritt Storage Service calculates
+## Storage Service calculates
 
-For each cloud storage provided
+For each cloud provider...
 - Bytes added
 - Bytes updated
 - Bytes assembled and zipped
@@ -400,7 +411,7 @@ Terry
 
 ## Date Normalization is Critical
 
-- Date/time filters are a primary filter in OpenSearch dashboard
+- Date/time filters are a primary filter in OpenSearch dashboards
 - Discovery tool provids a date historgram for analysis
 
 ----
@@ -747,7 +758,7 @@ Marisa
 ## Helpful Resources for OpenSearch
 - [OpenSearch Docs](https://opensearch.org/docs/latest/)
 - [Logstash](https://www.elastic.co/guide/en/logstash/current/index.html)
-- [Our Tutorial](https://github.com/CDLUC3/opensearch-tutorial)
+- [UC3 Team Tutorial](https://github.com/CDLUC3/opensearch-tutorial)
 
 ----
 
