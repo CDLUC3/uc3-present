@@ -9,9 +9,7 @@ Note:
 Marisa
 ----
 
-<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
----
 
 # Who We Are
 
@@ -37,12 +35,6 @@ CDL provides transformative digital library services, partnering both with UC ca
 ## UC3
 
 The mission of University of California Curation Center (UC3) is to provide transformative preservation, curation, and research data management systems, services, and initiatives that sustain and promote open scholarship.
-
-----
-
-## UC3 Architecture
-
-<img alt="UC3 Application stacks" src="images/ezid-waf-screenshot_2.png">
 
 ----
 
@@ -74,13 +66,8 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## 💬 Discussion: What are Your Logging Needs? 
-
-----
-
-Slido Word Cloud - Top use cases for log analysis?
-
-<iframe src="https://app.sli.do/event/jinWX26j29xcvvcwNiQKKc" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+## 💬 Discussion: What are your top use cases for log analysis?
+<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ---
 
@@ -245,13 +232,8 @@ Merritt UI Return Code Counts... with analysis notes
 
 ----
 
-## 💬 Discussion: Discussion: What are Your Logging Tools?
-
-----
-
-Slido Word Cloud - Which tools are you currently using for data collection and visualization?
-
-<iframe src="https://app.sli.do/event/jinWX26j29xcvvcwNiQKKc" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+## 💬 Discussion: Which tools are you currently using for data collection and visualization?
+<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ----
 
@@ -577,16 +559,6 @@ Note:
 Marisa
 
 ----
-
-## DMP Tool - Open Search
-
-- add video if applicable
-
-
-Note:
-Marisa
-
----
 
 # Logs vs Data - Interesting Challenges
 
