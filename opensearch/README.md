@@ -235,7 +235,17 @@ The larger context of the OpenSearch "Discovery" tool.
 
 ----
 
-Cumulative bytes processed by the Merritt Storage service by function and storage provider
+## Merritt Storage Service calculates
+
+For each cloud storage provided
+- Bytes added
+- Bytes updated
+- Bytes assembled and zipped
+- Bytes processed per millisecond
+
+----
+
+These calculations enable some useful visualizations
 
 <img alt="Dashboard illustrating the Cumulative Total of the bytes processed by the Merritt Storage and Access services over a 3 hour period" src="images/assemblies.png">
 
