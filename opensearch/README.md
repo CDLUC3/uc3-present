@@ -660,7 +660,7 @@ Note:
 Marisa
 ----
 
-## Ashley created prototype Docker configuration
+## DevOps engineer created prototype Docker configuration
 
 ----
 
