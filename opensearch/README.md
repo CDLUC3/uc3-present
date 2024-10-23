@@ -64,7 +64,7 @@ Raised the priority to improve our logging systems to
 
 ## Logging Needs
 - Find specific error events in logs 
-- Compute key event metrics
+- Calculate metrics
 - Discover unreported errors
 
 ----
@@ -183,6 +183,26 @@ Isolating a single error with OpenSearch search.
 
 ----
 
+<img alt="Highlight search box on prior image" src="images/search1.png">
+
+----
+
+<img alt="Highlight date filter on prior image" src="images/search2.png">
+
+----
+
+<img alt="Highlight date histogram on prior image" src="images/search3.png">
+
+----
+
+<img alt="Highlight column headers on prior image" src="images/search4.png">
+
+----
+
+<img alt="Hightlight data result columns on prior image" src="images/search5.png">
+
+----
+
 Exploring the details of the error message (table view)
 
 <img alt="Exploring a sample mysql error in a table view" src="images/log_explore.png">
@@ -201,7 +221,7 @@ The larger context of the OpenSearch "Discovery" tool.
 
 ----
 
-## Compute key event metrics
+## Calculate metrics
 
 - How widely are functions utilized
 - Frequency that functions are utilized
