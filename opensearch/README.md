@@ -40,12 +40,12 @@ The mission of University of California Curation Center (UC3) is to provide tran
 
 ## UC3 Architecture
 
-<img alt="UC3 Service Architecture " src="images/UC3-Architecture.png">
+<img alt="UC3 Service Architecture " src="images/UC3 Architecture.png">
 
 ---
 ## UC3 3rd Party Applications
 
-<img alt="UC3 3rd Party Applications stacks" src="images/UC3-Architecture.png">
+<img alt="UC3 3rd Party Applications stacks" src="images/UC3 3rd Party Apps.png">
 
 ---
 
@@ -689,11 +689,7 @@ Marisa
 
 ----
 
-## Generate visualizations
-
-----
-
-## Generate dashboards
+## Generate visualizations and dashboards
 
 ----
 
@@ -716,10 +712,6 @@ Marisa
 
 ----
 
-## Generate visualizations to tell a story about data
-
-----
-
 ## Explore OpenSearch as a Search tool
 
 ---
@@ -728,7 +720,7 @@ Marisa
 
 
 Note:
-Marisa
+Terry
 ----
 
 ## Community Resources
