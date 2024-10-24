@@ -40,7 +40,12 @@ The mission of University of California Curation Center (UC3) is to provide tran
 
 ## UC3 Architecture
 
-<img alt="UC3 Application stacks" src="images/UC3-Applications.png">
+<img alt="UC3 Service Architecture " src="images/UC3-Architecture.png">
+
+---
+## UC3 3rd Party Applications
+
+<img alt="UC3 3rd Party Applications stacks" src="images/UC3-Architecture.png">
 
 ---
 
