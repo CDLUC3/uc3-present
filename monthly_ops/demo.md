@@ -14,7 +14,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 ## Outline
 
-- Challenge: development team needs to track operational issues
+- Development team needed to take on ne operational responsibilities
 - Our approach to this challenge
 - What we learned
 
