@@ -108,6 +108,8 @@ Terry
 ## Elasticsearch
 
 - Search engine built on Apache Lucene
+- NoSQL database
+- Indexing JSON documents
 - Core to the **ELK stack**
 
 ----
@@ -123,10 +125,12 @@ Terry
 
 ## Elastic and AWS
 
-- Conflict with AWS
-- Elastic changed the licensing for Elasticsearch and Kibana
-- AWS created OpenSearch
-- Note: [Elastic changed the license again in 2024](https://www.elastic.co/blog/elasticsearch-is-open-source-again)
+- Conflict: Elastic vs AWS
+- 2021
+  - Elastic changed the licensing for Elasticsearch and Kibana
+  - AWS created OpenSearch
+- 2024
+  - [Elastic changed the license again in 2024](https://www.elastic.co/blog/elasticsearch-is-open-source-again)
 
 ----
 
@@ -155,7 +159,7 @@ Terry
 
 - @timestamp
 - method: GET | PUT
-- status: 200 | 401 | 404 |500
+- status: 200 | 401 | 404 | 500
 - path: /foo/bar
 - query: a=b&c=d
 - duration
@@ -588,13 +592,19 @@ More information on this project is available here.
 
 ----
 
-## EZID Demo
+EZID WAF Dashboard
 
-- add video of search tool
+<img alt="Demonstration of the EZID WAF dashboard" src="images/ezid-waf.gif">
 
 
 Note:
 Marisa
+
+----
+
+EZID ELB Dashboard
+
+<img alt="Demonstration of the EZID ELB dashboard" src="images/ezid-elb.gif">
 
 ----
 
