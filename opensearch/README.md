@@ -71,7 +71,6 @@ Raised the priority to improve our logging systems to
 
 ----
 
-## 💬 Discussion: What are your top use cases for log analysis?
 <iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ---
@@ -295,6 +294,11 @@ Merritt UI Return Code Counts... with analysis notes
 
 - We realized that it could be a great SEARCH tool
 - for OUR DATA, not just our logs
+
+----
+
+<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+
 
 ---
 
@@ -554,9 +558,8 @@ Merritt Web Application Firewall Logs
 
 <img alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
 
----
+----
 
-## 💬 Discussion: Which tools are you currently using for data collection and visualization?
 <iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
 
 ---
