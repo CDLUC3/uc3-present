@@ -8,12 +8,6 @@ https://github.com/terrywbrady
 
 ## Presentation Purpose
 
-Staying on top of security threats and operational issues can be an overwhelming challenge and a tedious challenge.
-
-----
-
-## Outline
-
 - Development team needed to take on new operational responsibilities
 - Our approach to this challenge
 - What we learned
@@ -59,7 +53,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 - We are adopting a DevOps approach
 - Need to empower developers to perform operational functions
-  - without turning them into Systems Administrators
+  - without turning them into full time Systems Administrators
 
 ----
 
@@ -67,7 +61,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 - Capacity Planning
 - Software End of Life
-- Software Dependencies
+- Software Vulnerabilities/Dependencies
 - Proactive Error Discovery
 
 ----
@@ -99,24 +93,25 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 ----
 
-## Our Process
-
-- Schedule time once a month
-- Limit to 30 minutes
-- Accomplish as much as we can
-- Figure it out together
-- Document learnings
-  - Build a script to follow in next session
-
-----
-
-## Areas of Focus
+## 3 Areas of Focus
 
 - Capacity Planning - Server Performance
 - Software Dependency Review
   - Vulnerabilities
   - End of Life
 - Proactive Error Log Tracking
+
+----
+
+## Our Process
+
+- Schedule time once a month for each area of focus
+  - Limit to 30 minutes
+  - Accomplish as much as we can
+- Figure it out together
+- Document learnings
+  - Build a script to follow in next session
+
 
 ---
 
@@ -129,6 +124,43 @@ Staying on top of security threats and operational issues can be an overwhelming
 - The actual script resides in a private repository.  
 - A [sanitized version](https://github.com/CDLUC3/uc3-present/blob/main/monthly_ops/routine_librato_checks.md) is provided here.
 
+
+----
+
+## Review Monthly Stats
+
+- Identify peak processing
+
+----
+
+Bytes Processed over 30 days
+
+<img alt="Bytes ingested over a 30 day period with a significant peak on Sept 05" src="images/bytes.png">
+
+----
+
+## Sample Performance Charts
+
+----
+
+## Database
+
+<img alt="Graph of database CPU over the same 30 day period.  The graph shows very modest CPU usage" src="images/database.png">
+
+----
+
+## Query Performance
+
+- Our system administrators have enabled RDS Performance Insights for the most recent 7 days 
+- Our query performance is quite stable at this time
+
+----
+
+RDS Performance Insights
+
+<img alt="Graph of RDS Performance Insights over the past 7 days.  Graph shows consistent performance." src="images/rds_performance_insights.png">
+
+
 ----
 
 ## Store/Ingest - subject to peak processing
@@ -138,26 +170,11 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 ----
 
-## Review Monthly Stats
-
-- Identify peak processing
-----
-
-Bytes Processed over 30 days
-
-<img alt="Bytes ingested over a 30 day period with a significant peak on Sept 05" src="images/bytes.png">
-
-----
-
 ## Server Notes
 
 - Link to performance charts
 - Expected performance
 - Key items to review
-
-----
-
-## Sample Performance Charts
 
 ----
 
@@ -224,32 +241,19 @@ Ingest Server - Memory Headroom
 
 <img alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory shows a gradual decline which is likely to be leveling off" src="images/ingest_ram_headroom.png">
 
+
 ----
 
-## Database
+## Audit Service
 
-<img alt="Graph of database CPU over the same 30 day period.  The graph shows very modest CPU usage" src="images/database.png">
-
+- Continually processes content
+- Performs fixity check on cloud content every 60 days
 
 ----
 
 ## Audit - constant load
 
 <img alt="Graph of audit service CPU over the same 30 day period.  The graph consistently high CPU usage" src="images/audit.png">
-
-----
-
-## Query Performance
-
-- Our system administrators have enabled RDS Performance Insights for the most recent 7 days 
-- Our query performance is quite stable at this time
-
-----
-
-RDS Performance Insights
-
-<img alt="Graph of RDS Performance Insights over the past 7 days.  Graph shows consistent performance." src="images/rds_performance_insights.png">
-
 
 ----
 
