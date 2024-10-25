@@ -162,7 +162,7 @@ Terry
 ## ECS Sample Fields
 
 - @timestamp
-- method: GET | PUT
+- method: GET | POST | PUT
 - status: 200 | 401 | 404 | 500
 - path: /foo/bar
 - query: a=b&c=d
@@ -278,8 +278,6 @@ Merritt UI Return Code Counts
 Merritt UI Return Code Counts... with analysis notes
 
 <img alt="Dashboard containing Aggregate totals of Merritt UI return codes grouped by Irregular and Regular responses along with an explanation of each return code" src="images/return_code_dashboard.png">
-
-----
 
 ----
 
@@ -460,7 +458,7 @@ filter {
 
 ## Log Ingest Challengs
 
-- Crazy regular expressions
+- Complex regular expressions
 - Logs that are not log files
 - Application inconsistency
 
