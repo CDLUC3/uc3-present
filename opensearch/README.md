@@ -85,7 +85,7 @@ Marisa
 ## Need for Consolidated Logging
 
 - CDL had Splunk
-- Developement teams did not have access
+- Development teams did not have access
 - CDL is an AWS shop
 - OpenSearch is the AWS solution for logs
 
@@ -183,7 +183,7 @@ Terry
 
 ## Find specific error events in logs 
 
-- High avalability services (multiple instances)
+- High availability services (multiple instances)
 - Eventual migration to containers - log directories will be less accessible
 
 ----
@@ -210,7 +210,7 @@ Isolating a single error with OpenSearch search.
 
 ----
 
-<img alt="Hightlight data result columns on prior image" src="images/search5.png">
+<img alt="Highlight data result columns on prior image" src="images/search5.png">
 
 ----
 
@@ -402,7 +402,7 @@ Terry
 ## Date Normalization is Critical
 
 - Date/time filters are a primary filter in OpenSearch dashboards
-- Discovery tool provids a date historgram for analysis
+- Discovery tool provids a date histogram for analysis
 
 ----
 
@@ -456,7 +456,7 @@ filter {
 
 ----
 
-## Log Ingest Challengs
+## Log Ingest Challenges
 
 - Complex regular expressions
 - Logs that are not log files
@@ -514,7 +514,7 @@ Terry
 ## "ECS" Implementations for logs
 
 - https://github.com/elastic/ecs-logging/blob/main/README.md
-  - Support for 8 langauges
+  - Support for 8 languages
 
 ----
 
@@ -548,7 +548,7 @@ Terry
 
 Demo: Merritt Application Logs
 
-<img alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
+<img alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browse one message in detail." src="images/ui-dashboard.gif">
 
 ----
 
@@ -586,7 +586,7 @@ Merritt cumulative ingests
 
 Merritt Object Health Filtering
 
-<img alt="Animated gif illustrating multiple filters being applied to a collection of Merritt Analysis Objects.  Once a subset of objects has been isolated, user explores the details fo a specific record." src="images/mrt_health.gif">
+<img alt="Animated gif illustrating multiple filters being applied to a collection of Merritt Analysis Objects.  Once a subset of objects has been isolated, user explores the details for a specific record." src="images/mrt_health.gif">
 
 ----
 

@@ -14,7 +14,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 ## Outline
 
-- Development team needed to take on ne operational responsibilities
+- Development team needed to take on new operational responsibilities
 - Our approach to this challenge
 - What we learned
 
@@ -63,7 +63,7 @@ Staying on top of security threats and operational issues can be an overwhelming
 
 ----
 
-## Immediate Needs for the Develpment Team to Take On
+## Immediate Needs for the Development Team to Take On
 
 - Capacity Planning
 - Software End of Life
@@ -222,7 +222,7 @@ Ingest Server - NFS wait
 
 Ingest Server - Memory Headroom
 
-<img alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory shows a gradual decline which is likely to be levelling off" src="images/ingest_ram_headroom.png">
+<img alt="Graph of available memory wait on the Storage service over the same 30 day period.  Available memory shows a gradual decline which is likely to be leveling off" src="images/ingest_ram_headroom.png">
 
 ----
 
@@ -274,7 +274,7 @@ RDS Performance Insights
 
 ## Leanings - Continue to Watch
 
-- RAM - Available headoom
+- RAM - Available headroom
   - Memory Leaks
 - Unreleased database connections
 
@@ -436,7 +436,7 @@ RDS Performance Insights
 ## Web Application Firewall (WAF) Logs
 
 - Make note of timeframes where errors may have been introduced by malicious activity
-- Idenitify categories of malicious activity
+- Identify categories of malicious activity
 
 ----
 
@@ -461,7 +461,7 @@ WAF Logs
 
 ## User Interface Errors
 
-<img alt="Animated gif illustrating an openearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browes one message in detail." src="images/ui-dashboard.gif">
+<img alt="Animated gif illustrating an opensearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browse one message in detail." src="images/ui-dashboard.gif">
 
 ----
 
@@ -495,7 +495,7 @@ Bytes processed, computed from application logs
 
 ## Leanings Capacity Analysis
 
-- Identified uncontrolled client activity that was driving a need for additional resouces
+- Identified uncontrolled client activity that was driving a need for additional resources
   - 18T of assembled downloads per week!
 
 ----
@@ -537,7 +537,7 @@ Bytes processed, computed from application logs
 - Connects team members to Security 
 - Connects team members to Cost Information
   - Cost review is handled by our DevOps engineer
-- Greater appeciation of what our logs can do
+- Greater appreciation of what our logs can do
 
 ----
 
@@ -546,7 +546,7 @@ Bytes processed, computed from application logs
 - Our manager appreciates the ability to dive into details with the team
 - Folks beyond our team have joined  us to observe the process
   - complimentary responses
-- This has given the intiative a nice boost
+- This has given the initiative a nice boost
 
 ----
 
@@ -596,7 +596,7 @@ Bytes processed, computed from application logs
 - What system functions require the most retries?
 - Can we graph periods of time where retries increase?
 - Can we graph retries required by cloud provider?
-- Can we quatify throughput by cloud provider?
+- Can we quantify throughput by cloud provider?
 
 ---
 
