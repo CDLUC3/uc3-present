@@ -151,7 +151,7 @@ Bytes Processed over 30 days
 
 ## Query Performance
 
-- Our system administrators have enabled RDS Performance Insights for the most recent 7 days 
+- Our system administrators have enabled Query Performance Insights for the most recent 7 days 
 - Our query performance is quite stable at this time
 
 ----
@@ -181,7 +181,7 @@ RDS Performance Insights
 ## Storage Service
 
 - Look for sustained CPU near 100%
-- Look for peaks in SAR NFS
+- Look for peaks in SAR NFS wait
 - Look for any significant drops in available memory or high swap
 
 ----
@@ -387,6 +387,7 @@ Ingest Server - Memory Headroom
 - We have been rewarded by every effort we have made to 
   - normalize builds
   - consolidate dependency configuration
+  - automate testing
 
 ----
 
@@ -452,8 +453,13 @@ WAF Logs
 
 ## Learnings - WAF
 
+- Anticpate random site crawling each month
 - Rate limit attempts to login to the site
 - Limit resource-intensive queries for unauthenticated users
+
+----
+
+## Application Logs - User Interface
 
 ----
 
@@ -463,13 +469,20 @@ WAF Logs
 
 ----
 
-## User Interface Errors
+Exploring User Interface Errors
 
 <img alt="Animated gif illustrating an opensearch dashboard showing Merritt UI errors.  The user drills down to messages with a 500 return code that have been classified as 'atom' requests.  User browse one message in detail." src="images/ui-dashboard.gif">
 
 ----
 
 ## Learnings - UI Errors
+
+- Expect 401/404 Errors
+- Explore/Prevent 500 Errors
+
+----
+
+## UI 500 Errors
 
 - Stale database connections
   - Retry logic
@@ -499,8 +512,9 @@ Bytes processed, computed from application logs
 
 ## Leanings Capacity Analysis
 
-- Identified uncontrolled client activity that was driving a need for additional resources
-  - 18T of assembled downloads per week!
+- Partner organization was requesting **18T of data assembly per week**
+  - Surprise to us and our partner
+- We began queueing "large" requests
 
 ----
 
