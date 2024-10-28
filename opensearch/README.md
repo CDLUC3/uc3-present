@@ -556,10 +556,6 @@ Merritt Web Application Firewall Logs
 
 <img alt="Animated gif illustrating opensearch filters on Web Application Firewall Logs.  First, filter for blocked traffic.  Second, isolate to a peak period.  Third, focus on PHP-related blocked requests.  Note sample request paths." src="images/waf.gif">
 
-----
-
-<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
-
 ---
 
 # What about Data (vs Logs)?
@@ -596,7 +592,7 @@ More information on this project is available here.
 
 - [Merritt Object Health - 13m Video](https://youtu.be/QtLZpID_THo?si=kwwoDTJq_AsRauBU)
 
-----
+---
 
 ## Incorporating Opensearch into EZID
 
@@ -642,6 +638,10 @@ Marisa
 
 ----
 
+<iframe src="https://wall.sli.do/event/jinWX26j29xcvvcwNiQKKc?section=74c18def-f759-428f-a16d-68e6dad939c5" frameBorder="0" allow="clipboard-write" title="Slido"></iframe>
+
+---
+
 # UC3 Team Collaboration and Process
 
 
@@ -649,14 +649,14 @@ Note:
 Marisa
 ----
 
-## UC3 team
-- 8 software developers
-- 1 dev ops 
+## UC3 developer team
+- 7 software developers
+- 1 dev ops engineer
 - developers dedicated to services
 
 ----
 
-## Prototype
+## From prototype to managed service
 - DevOps engineer created prototype Docker configuration
 - Terry loaded sample logs to prototype configuration
 - Creation of sample logstash rules for very predictable files
