@@ -693,6 +693,7 @@ Marisa
 - monthly Dev Coffee 
 - monthly planning discussions with our infrastructure team
 
+---
 
 # Open Search Community Engagement
 
