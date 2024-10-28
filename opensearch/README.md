@@ -598,6 +598,14 @@ More information on this project is available here.
 
 ----
 
+## Incorporating Opensearch into EZID
+
+
+Note:
+Marisa
+
+----
+
 EZID WAF Dashboard
 
 <img alt="Demonstration of the EZID WAF dashboard" src="images/ezid-waf.gif">
@@ -634,10 +642,6 @@ Marisa
 
 ----
 
-## 💬 Discussion: What stories could you tell by visualizing your application data?
-
----
-
 # UC3 Team Collaboration and Process
 
 
@@ -645,19 +649,18 @@ Note:
 Marisa
 ----
 
-## DevOps engineer created prototype Docker configuration
+## UC3 team
+- 8 software developers
+- 1 dev ops 
+- developers dedicated to services
 
 ----
 
-## Terry loaded sample logs to prototype configuration
-
-----
-
-## Creation of sample logstash rules for very predictable files
-
-----
-
-## Create managed service deployment
+## Prototype
+- DevOps engineer created prototype Docker configuration
+- Terry loaded sample logs to prototype configuration
+- Creation of sample logstash rules for very predictable files
+- DevOps created managed service deployment
 
 ----
 
@@ -670,52 +673,26 @@ Marisa
 
 ----
 
-## Learn the search tool
-
-----
-
-## Load general logs for other teams
-
-----
-
-## Learn about ECS
-
-----
-
-## Generate ECS log files for specific applications
-
-----
-
-## Load application log files
-
-----
-
-## Generate visualizations and dashboards
-
-----
-
-## Generate data files (vs logs) to be loaded to open search
-
-----
-
-## Set shard standards and index standards
-
-----
-
-## Set user groups and permissions for OpenSearch
-
-----
-
-## Set data retention policies by index
-
-- 30 days for logs
-- forever for data
+## Adopted by other teams
+- Tutorial 
+- Load general logs for EZID
+- Load application log files
+- Learn about ECS
 
 ----
 
 ## Explore OpenSearch as a Search tool
+ - indexing
+ - incorporating it into API and UI functions
 
 ---
+
+## Cross team knowledge sharing
+- weekly AWS environment chat
+- monthly TechX - CDL wide 
+- monthly Dev Coffee 
+- monthly planning discussions with our infrastructure team
+
 
 # Open Search Community Engagement
 
