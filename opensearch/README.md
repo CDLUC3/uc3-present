@@ -685,7 +685,7 @@ Marisa
  - indexing
  - incorporating it into API and UI functions
 
----
+----
 
 ## Cross team knowledge sharing
 - weekly AWS environment chat
