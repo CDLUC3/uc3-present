@@ -2,14 +2,17 @@
 
 - Terry Brady
 - Mark Reyes
+- https://github.com/CDLUC3/mrt-zk
 
 ---
 
-## What is ZooKeeper
+## What is ZooKeeper?
+
+TBD - need a good definition
 
 ---
 
-## Sample Job
+## Sample Merritt Job
 
 ```
 /jobs/jid0000053584: 
@@ -23,8 +26,28 @@
 ```
 
 ----
+
+## Sample Merritt Batch
+
+```
+/batches/bid0000002793: 
+/batches/bid0000002793/states: 
+/batches/bid0000002793/states/batch-completed: 
+/batches/bid0000002793/states/batch-completed/jid0000053980: 
+/batches/bid0000002793/states/batch-completed/jid0000053981: 
+/batches/bid0000002793/states/batch-processing: 
+/batches/bid0000002793/status:
+{
+  "status": "Completed"
+}
+/batches/bid0000002793/submission:
+{
+  "submitter": "eScholarship auto-submitter v1.1",
+```
+
+---
  
-## 3 Key Capabilities
+## ZooKeeper: 3 Key Capabilities
 
 - Persistent Locks
 - Ephemeral Locks
@@ -114,7 +137,7 @@ end
 
 - Priority Queue
 
----
+----
 
 ## Batches
 
@@ -124,7 +147,7 @@ end
 /batches/bid0000002791
 ```
 
----
+----
 
 ## Jobs
 
@@ -158,26 +181,10 @@ zk.create("/my/path", data: "My Data",
 
 ## Merritt Queue Design
 
-----
-
-## State Transitions
-
-https://github.com/CDLUC3/mrt-zk/blob/main/design/states.md
-
-----
-
-## Data Design
-
-https://github.com/CDLUC3/mrt-zk/blob/main/design/data.md
-
-----
-
-## Transition Design
-
-https://github.com/CDLUC3/mrt-zk/blob/main/design/transition.md
-
-
-_The implementation may have diverged from this document_
+- [State Transitions](https://github.com/CDLUC3/mrt-zk/blob/main/design/states.md)
+- [Data Design](https://github.com/CDLUC3/mrt-zk/blob/main/design/data.md)
+- [Transition Design](https://github.com/CDLUC3/mrt-zk/blob/main/design/transition.md)
+  - _The implementation may have diverged from this document_
 
 ---
 
@@ -186,7 +193,7 @@ _The implementation may have diverged from this document_
 - Near pairity between the Java and Ruby implementations of the design
 - Test case before/after encapsulated in [yaml](https://github.com/CDLUC3/mrt-zk/blob/main/test-cases.yml)
 
----
+----
 
 ## Unit Test
 
@@ -196,10 +203,15 @@ _The implementation may have diverged from this document_
 - ZK nodes are serialized to yaml
 - Test output is compared to `test-cases.yml`
 
----
+----
 
 ## Sample Test Case
 
 - [Java](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/test/java/org/cdlib/mrt/zk/ZKTestIT.java#L410-L424)
 - [Ruby](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/test/java/org/cdlib/mrt/zk/ZKTestIT.java#L410-L424)
 - [Expected Output](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/test-cases.yml#L98-L120)
+
+---
+
+## Thank You
+- https://github.com/CDLUC3/mrt-zk
