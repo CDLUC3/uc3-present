@@ -36,4 +36,4 @@ phases:
     - aws s3 cp --recursive zk s3://${S3CFBUCKET}/present/zk
     - aws s3 cp --recursive images s3://${S3CFBUCKET}/present/zk/images
 
-    - aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/monthly_ops/* --region us-east-1
+    - aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/zk/* --region us-east-1
