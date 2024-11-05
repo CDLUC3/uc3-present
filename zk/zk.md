@@ -7,6 +7,21 @@
 
 ## What is ZooKeeper
 
+---
+
+## Sample Job
+
+```
+/jobs/jid0000053584: 
+/jobs/jid0000053584/bid: bid0000002789
+/jobs/jid0000053584/configuration:
+{
+  "date": "2024-11-05",
+  "submitter": "eScholarship auto-submitter v1.1",
+  "queuePriority": "52",
+  "creator": ...
+```
+
 ----
  
 ## 3 Key Capabilities
@@ -75,7 +90,8 @@ zk.delete("/my/path")
 
 ```java
 try(ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)) {
-  client.create("/my/path", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
+  client.create("/my/path", "My Data", 
+    ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
 }
 # Lock is released when ZK client is released
 ```
@@ -96,7 +112,27 @@ end
 
 ## Sequential Node Creation
 
-- Priority Queueu
+- Priority Queue
+
+---
+
+## Batches
+
+```
+/batches/bid0000002789
+/batches/bid0000002790
+/batches/bid0000002791
+```
+
+---
+
+## Jobs
+
+```
+/jobs/jid0000053583
+/jobs/jid0000053584
+/jobs/jid0000053585
+```
 
 ----
 
@@ -104,7 +140,8 @@ end
 
 ```java
 ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)
-zk.create("/my/queue", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT_SEQUENTIAL);
+zk.create("/my/queue", "My Data", 
+  ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT_SEQUENTIAL);
 ```
 
 ----
@@ -113,7 +150,8 @@ zk.create("/my/queue", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSIS
 
 ```ruby
 zk = ZK.new('localhost:8084')
-zk.create("/my/path", data: "My Data", mode: :persistent_sequential, ignore: :no_node)
+zk.create("/my/path", data: "My Data", 
+  mode: :persistent_sequential, ignore: :no_node)
 ```
 
 ---
@@ -148,6 +186,8 @@ _The implementation may have diverged from this document_
 - Near pairity between the Java and Ruby implementations of the design
 - Test case before/after encapsulated in [yaml](https://github.com/CDLUC3/mrt-zk/blob/main/test-cases.yml)
 
+---
+
 ## Unit Test
 
 - Function specifies the yaml key it is implementing
@@ -155,6 +195,8 @@ _The implementation may have diverged from this document_
 - Test code is run
 - ZK nodes are serialized to yaml
 - Test output is compared to `test-cases.yml`
+
+---
 
 ## Sample Test Case
 
