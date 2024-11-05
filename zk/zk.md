@@ -2,7 +2,8 @@
 
 - Terry Brady
 - Mark Reyes
-- https://github.com/CDLUC3/mrt-zk
+
+https://github.com/CDLUC3/mrt-zk
 
 ---
 
@@ -65,7 +66,8 @@ TBD - need a good definition
 
 ```java
 ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)
-zk.create("/my/path", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+zk.create("/my/path", "My Data", 
+  ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
 ```
 
 ----
@@ -214,4 +216,5 @@ zk.create("/my/path", data: "My Data",
 ---
 
 ## Thank You
-- https://github.com/CDLUC3/mrt-zk
+
+https://github.com/CDLUC3/mrt-zk
