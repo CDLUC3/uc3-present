@@ -1,4 +1,7 @@
-# ZooKeeper for Distributed Queues and Distributed Locks
+## ZooKeeper as a Queue and Lock Solution for Merritt
+
+- Terry Brady
+- Mark Reyes
 
 ---
 
@@ -20,19 +23,41 @@
 
 ----
 
-## Lock Creation - Java
+## Persistent Lock Creation - Java
+
+```java
+ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)
+zk.create("/my/path", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+```
 
 ----
 
-## Lock Creation - Ruby
+## Persistent Lock Creation - Ruby
+
+```ruby
+zk = ZK.new('localhost:8084')
+zk.create("/my/path", data: "My Data")
+```
 
 ----
 
 ## Lock Release - Java
 
+```java
+ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)
+if (exists(client, "/my/path")){
+  client.delete("/my/path", -1);
+}
+```
+
 ----
 
 ## Lock Release - Ruby
+
+```ruby
+zk = ZK.new('localhost:8084')
+zk.delete("/my/path")
+```
 
 ---
 
@@ -48,9 +73,24 @@
 
 ## Ephemeral Lock - Java
 
+```java
+try(ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)) {
+  client.create("/my/path", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
+}
+# Lock is released when ZK client is released
+```
+
 ----
 
 ## Ephemeral Lock - Ruby
+
+```ruby
+begin
+  zk = ZK.new('localhost:8084')
+  zk.create("/my/path", data: "My Data", mode: :ephemeral)
+end
+# Lock is released when ZK client is released
+```
 
 ---
 
@@ -62,9 +102,19 @@
 
 ## Sequential Node Creation - Java
 
+```java
+ZooKeeper zk = new ZooKeeper("localhost:8084", 100, null)
+zk.create("/my/queue", "My Data", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT_SEQUENTIAL);
+```
+
 ----
 
 ## Sequential Node Creation - Ruby
+
+```ruby
+zk = ZK.new('localhost:8084')
+zk.create("/my/path", data: "My Data", mode: :persistent_sequential, ignore: :no_node)
+```
 
 ---
 
@@ -74,18 +124,40 @@
 
 ## State Transitions
 
+https://github.com/CDLUC3/mrt-zk/blob/main/design/states.md
+
 ----
 
 ## Data Design
+
+https://github.com/CDLUC3/mrt-zk/blob/main/design/data.md
 
 ----
 
 ## Transition Design
 
+https://github.com/CDLUC3/mrt-zk/blob/main/design/transition.md
+
+
+_The implementation may have diverged from this document_
+
 ---
 
 ## Unit Testing Merritt Queue
 
-- Java
-- Ruby
-- Yaml state shared by both
+- Near pairity between the Java and Ruby implementations of the design
+- Test case before/after encapsulated in [yaml](https://github.com/CDLUC3/mrt-zk/blob/main/test-cases.yml)
+
+## Unit Test
+
+- Function specifies the yaml key it is implementing
+- ZK nodes are cleared
+- Test code is run
+- ZK nodes are serialized to yaml
+- Test output is compared to `test-cases.yml`
+
+## Sample Test Case
+
+- [Java](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/test/java/org/cdlib/mrt/zk/ZKTestIT.java#L410-L424)
+- [Ruby](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/test/java/org/cdlib/mrt/zk/ZKTestIT.java#L410-L424)
+- [Expected Output](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/test-cases.yml#L98-L120)
