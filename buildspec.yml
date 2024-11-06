@@ -8,6 +8,7 @@ phases:
     - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin ${ECR_REGISTRY}
 
     - |
+      # this presentation is unlikely to change
       if false
       then
         cd opensearch
@@ -22,7 +23,9 @@ phases:
         cd ..
       fi
 
+      # this presentation is unlikely to change
       if false
+      then
         cd monthly_ops
         docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
         docker-compose up
@@ -36,6 +39,7 @@ phases:
       fi
 
       if true
+      then
         cd zk
         docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
         docker-compose up
