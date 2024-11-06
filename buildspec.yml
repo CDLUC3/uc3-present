@@ -23,6 +23,9 @@ phases:
         cd ..
       }
       
-      publish opensearch
-      publish monthly_ops
+      # the following presentations are now static
+      # publish opensearch
+      # publish monthly_ops
+
+      # actively maintained presentations
       publish zk
