@@ -8,46 +8,21 @@ phases:
     - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin ${ECR_REGISTRY}
 
     - |
-      # this presentation is unlikely to change
-      if false
-      then
-        cd opensearch
+      publish() {
+        dir=$1
+      
+        cd $1
         docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
         docker-compose up
-        aws s3 rm --recursive s3://${S3CFBUCKET}/present/opensearch || echo 'delete skipped'
-        aws s3 cp --recursive opensearch s3://${S3CFBUCKET}/present/opensearch
-        aws s3 cp --recursive images s3://${S3CFBUCKET}/present/opensearch/images
+        aws s3 rm --recursive s3://${S3CFBUCKET}/present/$1 || echo 'delete skipped'
+        aws s3 cp --recursive $1 s3://${S3CFBUCKET}/present/$1
+        aws s3 cp --recursive images s3://${S3CFBUCKET}/present/$1/images
 
-        aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/opensearch/* --region us-east-1
-
-        cd ..
-      fi
-
-      # this presentation is unlikely to change
-      if false
-      then
-        cd monthly_ops
-        docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
-        docker-compose up
-        aws s3 rm --recursive s3://${S3CFBUCKET}/present/monthly_ops || echo 'delete skipped'
-        aws s3 cp --recursive monthly_ops s3://${S3CFBUCKET}/present/monthly_ops
-        aws s3 cp --recursive images s3://${S3CFBUCKET}/present/monthly_ops/images
-
-        aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/monthly_ops/* --region us-east-1
+        aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/$1/* --region us-east-1
 
         cd ..
-      fi
-
-      if true
-      then
-        cd zk
-        docker pull ${ECR_REGISTRY}/docker-hub/webpronl/reveal-md
-        docker-compose up
-        aws s3 rm --recursive s3://${S3CFBUCKET}/present/zk || echo 'delete skipped'
-        aws s3 cp --recursive zk s3://${S3CFBUCKET}/present/zk
-        aws s3 cp --recursive images s3://${S3CFBUCKET}/present/zk/images
-       
-        aws cloudfront create-invalidation --distribution-id ${CFDISTRIBUTIONID} --paths /present/zk/* --region us-east-1
-        
-        cd ..
-      fi
+      }
+      
+      publish opensearch
+      publish monthly_ops
+      publish zk
