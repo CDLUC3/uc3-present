@@ -7,9 +7,54 @@ https://github.com/CDLUC3/mrt-zk
 
 ---
 
-## What is ZooKeeper?
+## Apache Zookeeper
 
-TBD - need a good definition
+_Because Coordinating Distributed Systems is a Zoo_
+- Definition: Distributed, open-source coordination service for distributed applications
+- Benefits: Fast, resilient, atomic
+- Client/Server model 
+    - Standalone (single node)
+    - Ensemble (multiple nodes)
+        - Quorum - 3/5
+- Implementation: File system like (_Znodes_)
+    - Persistent
+    - Ephermeral
+
+----
+
+## API
+
+- _connect_ − connect to the ZooKeeper ensemble
+- _close_ − close a connection
+- _create_ − create a znode
+- _delete_ − delete a particular znode and all its children
+- _exists_ − check whether a znode exists and its information
+- _getData_ − get data from a particular znode
+- _setData_ − set data in a particular znode
+- _getChildren_ − get all sub-nodes available in a particular znode
+
+----
+
+## Merritt and Zookeeper
+
+- Micro-service arch (many services and workers)
+- History
+    - FIFO Queue (deprecated)
+    - Priority Queue
+        - Submission quantity
+        - Collection based
+    - Distributed Lock
+        -  Between services
+        -  Between workers
+
+----
+
+## Merritt and Zookeeper (Continued)
+- Clients
+    - Ingest (queue and lock)
+    - Access (queue)
+    - Inventory (queue and lock)
+    - Admin UI (queue and lock)
 
 ---
 
