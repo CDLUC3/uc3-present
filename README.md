@@ -20,3 +20,7 @@ ffmpeg -i input.mov -r 24 output.gif
 ```
 docker run --rm -t --net=host -v .:/slides astefanutti/decktape https://merritt.uc3dev.cdlib.org/present/opensearch/README.html present.pdf
 ```
+
+```
+docker run --rm -t --net=host -v .:/slides astefanutti/decktape https://merritt.uc3dev.cdlib.org/present/monthly_ops/demo.html present.pdf
+```
