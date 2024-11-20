@@ -12,8 +12,6 @@ https://github.com/CDLUC3/mrt-zk
 _Because Coordinating Distributed Systems is a Zoo_
 - Definition: Distributed, open-source coordination service for distributed applications
 - Benefits: Fast, atomic, resilient
-- Client/Server model 
-- Implementation: File system like (_Znodes_)
 
 ----
 
