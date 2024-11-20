@@ -15,7 +15,7 @@ _Because Coordinating Distributed Systems is a Zoo_
 - Client/Server model 
     - Standalone (single node)
     - Ensemble (multiple nodes)
-        - Quorum - 3/5
+        - Quorum (3/5) / Leader
 - Implementation: File system like (_Znodes_)
     - Persistent
     - Ephermeral
@@ -24,7 +24,7 @@ _Because Coordinating Distributed Systems is a Zoo_
 
 ## API
 
-- _connect_ − connect to the ZooKeeper ensemble
+- _connect_ − open connection to the ZooKeeper
 - _close_ − close a connection
 - _create_ − create a znode
 - _delete_ − delete a particular znode and all its children
