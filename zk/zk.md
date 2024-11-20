@@ -11,7 +11,7 @@ https://github.com/CDLUC3/mrt-zk
 
 _Because Coordinating Distributed Systems is a Zoo_
 - Definition: Distributed, open-source coordination service for distributed applications
-- Benefits: Fast, resilient, atomic
+- Benefits: Fast, atomic, resilient
 - Client/Server model 
     - Standalone (single node)
     - Ensemble (multiple nodes)
@@ -49,12 +49,20 @@ _Because Coordinating Distributed Systems is a Zoo_
 
 ----
 
-## Merritt and Zookeeper (Continued)
+## Zookeeper Clients
 - Clients
-    - Ingest (queue and lock)
-    - Access (queue)
-    - Inventory (queue and lock)
-    - Admin UI (queue and lock)
+    - Ingest - Java (queue and lock)
+    - Access - Java (queue)
+    - Inventory - Java (queue and lock)
+    - Admin UI - Rails (queue and lock)
+----
+
+## ZNode Scale
+- Objects and Batches
+- Batch of 10 objects (1 image file each)
+    - 100 number of Znodes
+- Batch of 100 objects (3 image files each)
+    - 1000 number of Znodes
 
 ---
 
