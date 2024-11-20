@@ -13,12 +13,20 @@ _Because Coordinating Distributed Systems is a Zoo_
 - Definition: Distributed, open-source coordination service for distributed applications
 - Benefits: Fast, atomic, resilient
 - Client/Server model 
-    - Standalone (single node)
-    - Ensemble (multiple nodes)
-        - Quorum (3/5) / Leader
 - Implementation: File system like (_Znodes_)
-    - Persistent
-    - Ephermeral
+
+----
+
+## Client/Server model 
+- Standalone (single node)
+- Ensemble (multiple nodes)
+  - Quorum (3/5) / Leader
+
+----
+
+## Implementation: File system like (_Znodes_)
+- Persistent
+- Ephermeral
 
 ----
 
