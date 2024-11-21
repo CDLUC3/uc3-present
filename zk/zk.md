@@ -269,7 +269,7 @@ zk.create("/my/path", data: "My Data",
 ## Sample Test Case
 
 - [Java](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/test/java/org/cdlib/mrt/zk/ZKTestIT.java#L410-L424)
-- [Ruby](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/test/java/org/cdlib/mrt/zk/ZKTestIT.java#L410-L424)
+- [Ruby](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/src/main/ruby/spec/zk_spec.rb#L106-L118)
 - [Expected Output](https://github.com/CDLUC3/mrt-zk/blob/2.2.1/test-cases.yml#L98-L120)
 
 ---
