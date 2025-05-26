@@ -7,4 +7,4 @@ services:
     command: ["/slides", "README.md", "--theme", "white", "--css", "demo.css", "--static", "/assets"]
     volumes:
     - ".:/slides"
-    - "./present_build:/assets"
+    - "./devops_build:/assets"
