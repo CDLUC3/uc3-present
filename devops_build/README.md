@@ -1,4 +1,4 @@
-## On Your Journey to DevOps, Start with Your Build
+## On the Journey to DevOps, Start with Your Build
 
 ---
 
