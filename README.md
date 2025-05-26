@@ -2,7 +2,7 @@
 Git based UC3 team presentations
 
 ## UCTech 2025
-- [On Your Journey to DevOps, Start with Your Build](https://merritt.uc3dev.cdlib.org/present/devops_build/build.html)
+- [On Your Journey to DevOps, Start with Your Build](https://merritt.uc3dev.cdlib.org/present/devops_build/README.html)
 
 ## Team Presentations
 - [ZooKeeper as a Queue and Lock Solution for Merritt](https://merritt.uc3dev.cdlib.org/present/zk/zk.html)
