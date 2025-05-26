@@ -26,6 +26,7 @@ phases:
       # the following presentations are now static
       # publish opensearch
       # publish monthly_ops
+      # publish zk
 
       # actively maintained presentations
-      publish zk
+      publish devops_build
