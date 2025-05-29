@@ -27,7 +27,7 @@
 
 ----
 
-### Merritt Production System 
+### Current Merritt Production System 
 - 7 microservices
 - 27 servers
 
@@ -36,6 +36,7 @@
 ### Merritt migrated to AWS around 2016
 - Lift and shift
 - Managed EC2 instances
+- Gradual adoption of cloud paradigms within the system
 
 ----
 
@@ -58,7 +59,7 @@
 
 ----
 
-### Production DevOps
+### Current Production DevOps
 - DevOps engineer manages of Puppet and Ansible resources for servers
   - Not core skills of the majority of the dev team
 - AWS permissions granted to EC2 instances
@@ -68,6 +69,7 @@
 ----
 
 ### Devs and DevOps
+- Want to Code
 - Excited by cloud technologies
 - Lots to learn
 - Want more control
@@ -79,8 +81,8 @@
 - Infrastructure as code
 - Disposable resources (rather than patching persistent assets)
 - Scale up and down to meet demand
-  - Currently over-provisioned
   - Persistent resources make this difficult
+  - Can lead to over-provisioning
 
 ----
 
@@ -102,8 +104,8 @@
 ----
 
 ### Project 1: Generate Dev Documentation
-- JavaDoc
-- RubyDoc
+- [JavaDoc](https://merritt.uc3dev.cdlib.org/api/mrt-zk/java/org/cdlib/mrt/zk/package-summary.html)
+- [RubyDoc](https://merritt.uc3dev.cdlib.org/api/mrt-zk/ruby/MerrittZK.html)
 - Cumbersome to keep up to date without a website
 
 ----
@@ -117,15 +119,16 @@
 
 ----
 
-### Demo: Java Doc/Ruby Doc
-- [Merritt Dev Resources](https://merritt.uc3dev.cdlib.org/)
-
-----
-
-### Project 2: Apply the same concept for publishing index page
+### Project 2: Generate an index page for Dev Resources
 - Commit markdown
 - Push to S3
 - Update CloudFront
+
+----
+
+### Demo: Java Doc/Ruby Doc
+- [Merritt Dev Resources](https://merritt.uc3dev.cdlib.org/)
+- This presentation is hosted here!
 
 ----
 
@@ -203,13 +206,13 @@ To github.com:cdluc3/mrt-ingest
 
 ### Demo: GitHub
 
-<img alt="image" src="images/githubtag.png">
+![alt text](images/githubtag.png)
 
 ----
 
 ### Demo: AWS Connector for GitHub
 
-<img alt="image" src="images/githubconnector.png">
+![alt text](images/githubconnector.png)
 
 ----
 
@@ -222,7 +225,7 @@ To github.com:cdluc3/mrt-ingest
 
 ### Demo: CodePipeline
 
-<img alt="image" src="images/pipeline.png">
+![alt text](images/pipeline.png)
 
 ----
 
@@ -232,25 +235,25 @@ To github.com:cdluc3/mrt-ingest
 
 ----
 
-<img alt="image" src="images/pipeline-push.png">
+![alt text](images/pipeline-push.png)
 
 ----
 
 ### Demo: CodeBuild
 
-<img alt="image" src="images/codebuild.png">
+![alt text](images/codebuild.png)
 
 ----
 
 ### Demo: CodeArtifact
 
-<img alt="image" src="images/codeartifact.png">
+![alt text](images/codeartifact.png)
 
 ----
 
 ### Demo: CodeArtifact Details
 
-<img alt="image" src="images/codeartifact-details.png">
+![alt text](images/codeartifact-details.png)
 
 ---
 
@@ -269,7 +272,7 @@ To github.com:cdluc3/mrt-ingest
 
 ### Demo: Elastic Container Registry (ECR)
 
-<img alt="image" src="images/ecr.png">
+![alt text](images/ecr.png)
 
 ----
 
@@ -282,7 +285,7 @@ To github.com:cdluc3/mrt-ingest
 
 ### Demo
 
-<img alt="image" src="images/eventbridge.png">
+![alt text](images/eventbridge.png)
 
 ----
 
@@ -510,9 +513,29 @@ Note the published release info
 Note that the ecs-prd image has migrated
 ![1.7.9 tagged as ecs-prd Screenshot](images/tagged-ecs-prd.png)
 
+----
+
+### Services Configured
+- ⚙️ ECS Cluster
+- ⚙️ ECS Service
+- ⚙️ ECS Task Definition
+  - ⚙️ ECS Container Definition
+- ⚙️ ServiceConnect Configuration 
+
+----
+
+### Additional Services
+- ⚙️ Elastic Load Balancer
+- ⚙️ Elastic File System
+
+----
+
+### Resources Created without Infrastructure as Code
+- 🛠️ RDS Database
+
 ---
 
-### Why start with the build?
+## Why start with the build?
 
 ----
 
@@ -534,7 +557,7 @@ Note that the ecs-prd image has migrated
 - Library (jar and gem) tagging behaves differently than 
 - Deployed service tagging
 - Docker image tags behave differently from source code tags
-- Often useful to re-use the same tags!
+- Often useful to re-use the same tag names!
 
 ---
 
