@@ -6,9 +6,9 @@
 
 ---
 
-### DevOps Journey
+## DevOps Journey
 - My Team is on a journey to DevOps Adoption
-- We started by recreating our build system using infrastructure as code
+- We started by recreating our build system using **infrastructure as code**
 - delighted by the results
 
 ---
@@ -94,12 +94,15 @@
 
 ---
 
-### Start simply
+## Start simply
+
+----
+
+### Inspiration to Get Started
 - Colleague was publishing some resources to CloudFront
   - I had thought of Cloud Front as an expensive solution
   - Learned it was a preferred way of publishing assets
-- Very handy for Merritt
-- Merritt Dev Resources
+- Great solution for "Merritt Dev Resources"
 
 ----
 
@@ -165,7 +168,7 @@
 
 ---
 
-### Our Progress Spiraled!
+## Our Progress Spiraled!
 
 ----
 
@@ -188,7 +191,7 @@
 
 ---
 
-### Demo: Service build
+## Demo: Service build
 
 ----
 
@@ -256,6 +259,12 @@ To github.com:cdluc3/mrt-ingest
 ![alt text](images/codeartifact-details.png)
 
 ---
+
+## Publish Docker Images
+- We have used docker images in development testing
+- Prepare for container-based deployments
+
+----
 
 ### Project 6: Build docker images used in integration testing of java services
 - ⚙️ Elastic Container Registry
@@ -343,7 +352,7 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 
 ---
 
-### Current effort
+## Current effort: ECS
 - Building Elastic Container Service ECS stack (DEV)
   - Run our services as containers
 - Using those docker images
@@ -407,7 +416,7 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 Note that a second tag has been assigned to the image
 ![Tagged ecs-dev Screenshot](images/tagged-ecs-dev.png)
 
----
+----
 
 ## Goal: Tag current code in Git in prepraration for deployment to Stage
 
@@ -458,7 +467,7 @@ To github.com:CDLUC3/mrt-dashboard
 
 ![1.7.9 tagged with ecs-stg Screenshot](images/tagged-ecs-stg.png)
 
----
+----
 
 ## Goal: Deploy to to ECS Prod
 
