@@ -232,21 +232,6 @@ Resources:
 
 ----
 
-CodeBuild
-```yaml
-Resources:
-  CodeBuildProject:
-    Type: 'AWS::CodeBuild::Project'
-    Properties:
-      Name: !Sub 'Merritt-CodeBuild-${CodeBuildEnvironmentComputeType}'
-      QueuedTimeoutInMinutes: 5
-      Artifacts:
-        Type: 'CODEPIPELINE'
-        OverrideArtifactName: true
-```
-
-----
-
 CodeStar Connection
 ```yaml
 Triggers:
@@ -326,13 +311,13 @@ To github.com:cdluc3/mrt-ingest
 
 ### Demo: GitHub
 
-![alt text](images/githubtag.png)
+![Sceenshot of tag demo-1.3.0 created](images/githubtag.png)
 
 ----
 
 ### Demo: AWS Connector for GitHub
 
-![alt text](images/githubconnector.png)
+![Screenshot of AWS Connector for Github Screen](images/githubconnector.png)
 
 ----
 
@@ -345,7 +330,7 @@ To github.com:cdluc3/mrt-ingest
 
 ### Demo: CodePipeline
 
-![alt text](images/pipeline.png)
+![Screenshot of CodePipeline listing including the pipeline triggered by the recent comment](images/pipeline.png)
 
 ----
 
@@ -355,25 +340,25 @@ To github.com:cdluc3/mrt-ingest
 
 ----
 
-![alt text](images/pipeline-push.png)
+![Screenshot of the CodePipeline triggered by the recent commit](images/pipeline-push.png)
 
 ----
 
 ### Demo: CodeBuild
 
-![alt text](images/codebuild.png)
+![Screenshot of the CodeBuild job that was launched by the CodePipeline](images/codebuild.png)
 
 ----
 
 ### Demo: CodeArtifact
 
-![alt text](images/codeartifact.png)
+![Screenshot showing the CodeArtifact repository used for Merritt java resources](images/codeartifact.png)
 
 ----
 
 ### Demo: CodeArtifact Details
 
-![alt text](images/codeartifact-details.png)
+![Screenshot showing the details of an artifact that was published to CodeArtifacat](images/codeartifact-details.png)
 
 ---
 
@@ -409,7 +394,7 @@ Resources:
 
 ### Demo: Elastic Container Registry (ECR)
 
-![alt text](images/ecr.png)
+![Screenshot showing the docker image that was generated with the recent tag demo-1.3.0](images/ecr.png)
 
 ----
 
@@ -470,7 +455,7 @@ parameters:
 
 ### Demo
 
-![alt text](images/eventbridge.png)
+![Screenshot showing Merritt builds listed in AWS EventBridge Schedules](images/eventbridge.png)
 
 ----
 
@@ -483,18 +468,18 @@ parameters:
 ----
 
 ### Demo: Daily End to End Testing Notification Start
-![alt text](images/end_to_end_start.png)
+![Screenshot showing a message generated in Slack at the start of a build](images/end_to_end_start.png)
 
 ----
 
 ### Demo: Daily End to End Testing Notification Finished
-![alt text](images/end_to_end_finish.png)
+![Screenshot showing a message generated in Slack at the end of a build](images/end_to_end_finish.png)
 
 ----
 
 ### Demo: Daily End to End Testing Details
 
-![alt text](images/end_to_end_details.png)
+![Screenshot showing the details for a recent CodeBuild job running Merritt End to End tests](images/end_to_end_details.png)
 
 ----
 
@@ -512,6 +497,7 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 - ✅ Just in time builds
 - ✅ Faster builds
 - ✅ End to end testing can be run by anyone - no environment configuration
+- ✅ Daily rebuild of docker images (upstream patches)
 
 ----
 
@@ -522,8 +508,9 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 
 ----
 
-### Ready for DevOps?
-- By the end of this, I felt reasonably proficient with Sceptre
+### Building on our Builds
+- By the end of this, I felt reasonably proficient with Sceptre and CloudFormation
+- Leverage git tags in our applications
 
 ---
 
@@ -545,7 +532,7 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 
 ### Merritt ECS Stack
 
-![alt text](images/ecs.png)
+![Screenshot of the Merritt Admin Tool showing a list of Merritt services running in Elastic Container Service - ECS](images/ecs.png)
 
 ----
 
@@ -727,11 +714,11 @@ Note that the ecs-prd image has migrated
 - Critical, but not "Production"
 - Always more things that are useful to automate
 - In our case, we had end to end test script that we run manually after deployment/patching
-- This was a great excuse to automate it
+- This was a great excuse to automate the schedule
 
 ----
 
-### Separate from production
+### Builds are Separate from production
 - Great experimental platform
 - Easy to plug into a production system
 
