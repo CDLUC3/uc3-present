@@ -8,3 +8,13 @@
   background-size: contain !important;
   background-position: center !important;
 }
+
+pre.code-wrapper {
+  width: 120%;
+  margin-left: -10%;
+}
+
+iframe {
+  min-height: 600px;
+  width: 100%;
+}

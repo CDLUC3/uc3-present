@@ -40,7 +40,7 @@
 
 ----
 
-### Cloud state
+### Cloud Services we Use
 - S3
 - RDS
 - ALB, WAF
@@ -50,7 +50,7 @@
 
 ----
 
-### Merritt Staffing
+### Merritt Team Makeup
 - 1 PM
 - 3 Dev
 - Shared resources
@@ -78,9 +78,9 @@
 ----
 
 ### DevOps Direction
-- Infrastructure as code
-- Disposable resources (rather than patching persistent assets)
-- Scale up and down to meet demand
+- 🎯 Infrastructure as code
+- 🎯 Disposable resources (rather than patching persistent assets)
+- 🎯 Scale up and down to meet demand
   - Persistent resources make this difficult
   - Can lead to over-provisioning
 
@@ -88,7 +88,7 @@
 
 ### Migration plan
 - Multi-year migration
-- Resources moving from centralized account to program specific accounts
+- Resources moving from centralized account to team-specific accounts
   - Dev teams will have console access 
 - Everything in production will be created with infrastructure as code
 
@@ -148,11 +148,115 @@
 
 ----
 
+S3 Bucket for CloudFront
+```yaml
+Resources:
+  S3CFBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+
+```
+
+----
+
+CloudFront Distribution
+```yaml
+Resources:
+  CloudfrontDistro:
+    Type: 'AWS::CloudFront::Distribution'
+    Properties:
+      DistributionConfig:
+        Origins:
+          - DomainName: "{{sceptre_user_data.S3CFBucketId}}.s3.amazonaws.com"
+ 
+```
+
+----
+
+Certificate
+```yaml
+Resources:
+  Certificate:
+    Type: 'AWS::CertificateManager::Certificate'
+    Properties:
+      DomainName: !Sub "*.{{sceptre_user_data.domain}}"
+      DomainValidationOptions:
+        - DomainName: !Sub "*.{{sceptre_user_data.domain}}"
+```
+
+----
+
+DNS Record
+```yaml
+Resources:
+  RecordSet:
+    Type: 'AWS::Route53::RecordSet'
+    Properties:
+      Name: {{sceptre_user_data.domain}}
+      Type: 'A'
+```
+
+----
+
 ### Resources Generated (build)
 - ⚙️ S3 bucket for build artifacts
 - ⚙️ CodePipeline
 - ⚙️ CodeBuild
 - ⚙️ CodeStarSourceConnection
+
+----
+
+CodePipeline
+```yaml
+Resources:
+  CodePipeline:
+    Type: 'AWS::CodePipeline::Pipeline'
+    Properties:
+      Name: !Join ['-', ['mrt_pipeline', !Select [1, !Split ['/', !Ref RepositoryName]], !Ref Mode]]
+```
+
+----
+
+CodeBuild
+```yaml
+Resources:
+  CodeBuildProject:
+    Type: 'AWS::CodeBuild::Project'
+    Properties:
+      Name: !Sub 'Merritt-CodeBuild-${CodeBuildEnvironmentComputeType}'
+      QueuedTimeoutInMinutes: 5
+      Artifacts:
+        Type: 'CODEPIPELINE'
+        OverrideArtifactName: true
+```
+
+----
+
+CodeBuild
+```yaml
+Resources:
+  CodeBuildProject:
+    Type: 'AWS::CodeBuild::Project'
+    Properties:
+      Name: !Sub 'Merritt-CodeBuild-${CodeBuildEnvironmentComputeType}'
+      QueuedTimeoutInMinutes: 5
+      Artifacts:
+        Type: 'CODEPIPELINE'
+        OverrideArtifactName: true
+```
+
+----
+
+CodeStar Connection
+```yaml
+Triggers:
+- ProviderType: CodeStarSourceConnection
+  GitConfiguration:
+    Push:
+    - Branches:
+        Includes:
+        - !Ref BranchToMonitor
+```
 
 ----
 
@@ -162,9 +266,9 @@
 ----
 
 ### Infrastructure as Code at CDL
-- AWS CloudFormation
-- Sceptre
-- jinja2 templates
+- [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+- [Sceptre](https://docs.sceptre-project.org/latest/)
+- [jinja2 templates](https://jinja.palletsprojects.com/en/stable/templates/)
 
 ---
 
@@ -187,6 +291,19 @@
 
 ----
 
+CodeArtifact
+```yaml
+Resources:
+  CodeArtifactDomain: 
+    Type: AWS::CodeArtifact::Domain
+    Properties:
+      DomainName: !Sub '${CodeArtifactDomainName}'
+  CodeArtifactRepository:
+    Type: AWS::CodeArtifact::Repository
+```
+
+----
+
 ### Project 5: Build java services using published artifact resources
 
 ---
@@ -197,7 +314,7 @@
 
 ### Demo: Tag Repo
 
-```bash
+```
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: This repository moved. Please use the new location:
 remote:   git@github.com:CDLUC3/mrt-ingest.git
@@ -220,8 +337,8 @@ To github.com:cdluc3/mrt-ingest
 ----
 
 ### Demo: AWS Connector for GitHub
-- enables the tracking of commits and tags
-- This allows AWS CodePipeline to clone selected private repos
+- Enables the tracking of commits and tags
+- Allows AWS CodePipeline to clone selected private repos
 - Some AWS screens call this an *AWS CodeConnection*
 
 ----
@@ -271,6 +388,17 @@ To github.com:cdluc3/mrt-ingest
 
 ----
 
+Elastic Container Registry Repository
+```yaml
+Resources:
+  ECRRepo:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: !Sub '${RepoName}'
+```
+
+----
+
 ### Project 7: Build all Merritt services at docker images
 
 ----
@@ -287,10 +415,58 @@ To github.com:cdluc3/mrt-ingest
 
 ### Project 8: Schedule daily builds
 - Ensure up to date docker images (vulnerabilities)
-- ⚙️ EventBridge Scedule
+- ⚙️ EventBridge Schedule
 - ⚙️ AWSChatbotSlack Notification
 
 ----
+
+EventBridge Schedule
+```yaml
+  PipelineSchedule:
+    Type: AWS::Scheduler::Schedule
+    Condition: IsSchedule
+    Properties:
+      Description: Run pipeline on a weekday schedule
+      Name: !Join ['-', ['mrt_pipeline', !Select [1, !Split ['/', !Ref RepositoryName]], !Ref Mode]]
+      ScheduleExpression: !Ref ScheduleCron
+```
+
+----
+
+AWSChatbotSlack Notification
+```yaml
+  PipelineNotification:
+    Type: AWS::CodeStarNotifications::NotificationRule
+    Properties:
+      DetailType: 'BASIC'
+      EventTypeIds: 
+      - codepipeline-pipeline-pipeline-execution-failed
+      Targets: 
+      - TargetType: "AWSChatbotSlack"
+```
+
+----
+
+Project Configuration for a Repo
+```yaml
+template:
+  path: 'codepipeline.yaml.j2'
+
+parameters:
+  RepositoryName: 'CDLUC3/mrt-integ-tests'
+  BranchToMonitor: 'main'
+  Mode: 'Other'
+  IntegTestEnv: production
+  IngestFiles: default
+  Schedule: 'true'
+  ScheduleCron: 'cron(0 7 ? * MON,THU *)'
+  NotifyOnStart: 'true'
+  NotifyOnSuccess: 'true'
+  BuildType: 'medium'
+```
+
+----
+
 
 ### Demo
 
@@ -332,11 +508,10 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 ----
 
 ### Replaced our legacy build system (Jenkins)
-- More feature rich
-- Just in time builds
-- Faster builds
-- More complete builds
-- End to end testing can be run by anyone - no environment configuration
+- ✅ More feature rich
+- ✅ Just in time builds
+- ✅ Faster builds
+- ✅ End to end testing can be run by anyone - no environment configuration
 
 ----
 
@@ -355,7 +530,7 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 ## Current effort: ECS
 - Building Elastic Container Service ECS stack (DEV)
   - Run our services as containers
-- Using those docker images
+- Using the published docker images
 - Auto-deploy to DEV stack at the end of the build
 
 ----
@@ -387,7 +562,7 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 ----
 
 ### CodeBuild runs in the background...
-- image mrt-dashboard:sample-feature pushed to ECR
+- image `mrt-dashboard:sample-feature` pushed to ECR
 
 ----
 
@@ -430,7 +605,7 @@ By Merritt conventions, only tagged branches should be deployed to stage or prod
 
 ----
 
-```
+```bash
 $ git tag 1.7.9
 $ git push --tags
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
@@ -441,7 +616,7 @@ To github.com:CDLUC3/mrt-dashboard
 ----
 
 ### CodeBuild Runs in the background...
-- mrt-dashboard:1.7.9 is pushed to ECR
+- `mrt-dashboard:1.7.9` is pushed to ECR
 
 ----
 
