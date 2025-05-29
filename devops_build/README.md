@@ -6,6 +6,17 @@
 
 ---
 
+### DevOps Journey
+- My Team is on a journey to DevOps Adoption
+- We started by recreating our build system using infrastructure as code
+- delighted by the results
+
+---
+
+## Background - About My Team
+
+----
+
 ### [Merritt Digital Preservation Repository](https://merritt.cdlib.org)
 - 4.6m objects
 - 66m digital files
