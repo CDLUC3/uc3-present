@@ -535,7 +535,7 @@ parameters:
 - By the end of this, I felt reasonably proficient with Sceptre and CloudFormation
 - Leverage git tags in our applications
 
----- 
+----
 
 ### Part 2: Questions?
 
