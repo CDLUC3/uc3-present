@@ -13,7 +13,7 @@
 
 ---
 
-## Background - About My Team
+# Background - About My Team
 
 ----
 
@@ -94,7 +94,7 @@
 
 ---
 
-## Part 1: Start Simply
+# Part 1: Start Simply
 
 ----
 
@@ -106,7 +106,7 @@
 
 ----
 
-### Project 1: Generate Dev Documentation
+### Build Project 1: Generate Dev Documentation
 - [JavaDoc](https://merritt.uc3dev.cdlib.org/api/mrt-zk/java/org/cdlib/mrt/zk/package-summary.html)
 - [RubyDoc](https://merritt.uc3dev.cdlib.org/api/mrt-zk/ruby/MerrittZK.html)
 - Cumbersome to keep up to date without a website
@@ -122,7 +122,7 @@
 
 ----
 
-### Project 2: Generate an index page for Dev Resources
+### Build Project 2: Generate an index page for Dev Resources
 - Commit markdown
 - Push to S3
 - Update CloudFront
@@ -262,11 +262,11 @@ Triggers:
 
 ---
 
-## Part 2: Our Progress Spiraled!
+# Part 2: Our Progress Spiraled!
 
 ----
 
-### Project 3: Generate javadocs for all Merritt libraries
+### Build Project 3: Generate javadocs for all Merritt libraries
 
 - Create a CodePipeline / CodeBuild for all libraries
 
@@ -276,7 +276,7 @@ Triggers:
 
 ----
 
-### Project 4: Build java libraries and publish to an artifact repo
+### Build Project 4: Build java libraries and publish to an artifact repo
 - ⚙️ AWS CodeArtifact
 
 ----
@@ -294,9 +294,9 @@ Resources:
 
 ----
 
-### Project 5: Build java services using published artifact resources
+### Build Project 5: Build java services using published artifact resources
 
----
+----
 
 ## Demo: Service build
 
@@ -378,7 +378,7 @@ build:
 
 ![Screenshot showing the details of an artifact that was published to CodeArtifacat](images/codeartifact-details.png)
 
----
+----
 
 ## Publish Docker Images
 - We have used docker images in development testing
@@ -386,7 +386,7 @@ build:
 
 ----
 
-### Project 6: Build docker images used in integration testing of java services
+### Build Project 6: Build docker images used in integration testing of java services
 - ⚙️ Elastic Container Registry
 
 ----
@@ -402,7 +402,7 @@ Resources:
 
 ----
 
-### Project 7: Build all Merritt services at docker images
+### Build Project 7: Build all Merritt services at docker images
 
 ----
 
@@ -416,7 +416,7 @@ Resources:
 
 ----
 
-### Project 8: Schedule daily builds
+### Build Project 8: Schedule daily builds
 - Ensure up to date docker images (vulnerabilities)
 - ⚙️ EventBridge Schedule
 - ⚙️ AWSChatbotSlack Notification
@@ -457,11 +457,11 @@ AWSChatbotSlack Notification
 
 ----
 
-### Project 9: Run java end to end testing using Code Pipeline/CodeBuild
+### Build Project 9: Run java end to end testing using Code Pipeline/CodeBuild
 
 ----
 
-### Project 10: Schedule end to end testing every weekday
+### Build Project 10: Schedule end to end testing every weekday
 
 ----
 
@@ -541,13 +541,14 @@ parameters:
 
 ---
 
-## Part 3: Building on our Builds!
+# Part 3: Building on our Builds!
 
 ----
 
 ### Our Migration Goal
 
 - EC2 Servers --> Elastic Container Service (ECS) Containers
+- Deploy WAR files/Ruby Apps --> Deploy Container Images
 - Persistent Resources --> Discard and Recreate resources
 
 ----
@@ -574,7 +575,7 @@ parameters:
 
 ----
 
-## Goal: Create a feature Branch for Merritt UI, Depoloy to ECS Dev
+## Demo Goal: Create a feature Branch for Merritt UI, Depoloy to ECS Dev
 
 ----
 
@@ -618,7 +619,7 @@ Note that a second tag has been assigned to the image
 
 ----
 
-## Goal: Tag current code in Git in prepraration for deployment to Stage
+## Demo Goal: Tag current code in Git in prepraration for deployment to Stage
 
 ----
 
@@ -669,7 +670,7 @@ To github.com:CDLUC3/mrt-dashboard
 
 ----
 
-## Goal: Deploy to to ECS Prod
+## Demo Goal: Deploy to to ECS Prod
 
 ----
 
@@ -748,7 +749,7 @@ Note that the ecs-prd image has migrated
 
 ---
 
-## Why start with the build?
+# Why start with the build?
 
 ----
 
