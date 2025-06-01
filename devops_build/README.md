@@ -94,7 +94,7 @@
 
 ---
 
-## Start simply
+## Part 1: Start Simply
 
 ----
 
@@ -199,7 +199,7 @@ Resources:
 ----
 
 ### Resources Generated (build)
-- ⚙️ S3 bucket for build artifacts
+- ⚙️ S3 bucket for pipeline artifacts
 - ⚙️ CodePipeline
 - ⚙️ CodeBuild
 - ⚙️ CodeStarSourceConnection
@@ -255,9 +255,14 @@ Triggers:
 - [Sceptre](https://docs.sceptre-project.org/latest/)
 - [jinja2 templates](https://jinja.palletsprojects.com/en/stable/templates/)
 
+
+----
+
+### Part 1: Questions?
+
 ---
 
-## Our Progress Spiraled!
+## Part 2: Our Progress Spiraled!
 
 ----
 
@@ -299,7 +304,9 @@ Resources:
 
 ### Demo: Tag Repo
 
-```
+```bash
+$git tag demo-1.3.0
+$git push --tags
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: This repository moved. Please use the new location:
 remote:   git@github.com:CDLUC3/mrt-ingest.git
@@ -347,6 +354,17 @@ To github.com:cdluc3/mrt-ingest
 ### Demo: CodeBuild
 
 ![Screenshot of the CodeBuild job that was launched by the CodePipeline](images/codebuild.png)
+
+----
+
+### buildspec.yaml
+
+```yaml
+build:
+- mvn -ntp clean install
+- mvn -ntp deploy:deploy-file ...
+- docker build --push --quiet ...
+```
 
 ----
 
@@ -432,26 +450,6 @@ AWSChatbotSlack Notification
 
 ----
 
-Project Configuration for a Repo
-```yaml
-template:
-  path: 'codepipeline.yaml.j2'
-
-parameters:
-  RepositoryName: 'CDLUC3/mrt-integ-tests'
-  BranchToMonitor: 'main'
-  Mode: 'Other'
-  IntegTestEnv: production
-  IngestFiles: default
-  Schedule: 'true'
-  ScheduleCron: 'cron(0 7 ? * MON,THU *)'
-  NotifyOnStart: 'true'
-  NotifyOnSuccess: 'true'
-  BuildType: 'medium'
-```
-
-----
-
 
 ### Demo
 
@@ -492,6 +490,31 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 
 ----
 
+### Sample Sceptre Config 
+- For integration testing pipeline
+
+----
+
+Project Configuration for a Repo
+```yaml
+template:
+  path: 'codepipeline.yaml.j2'
+
+parameters:
+  RepositoryName: 'CDLUC3/mrt-integ-tests'
+  BranchToMonitor: 'main'
+  Mode: 'Other'
+  IntegTestEnv: production
+  IngestFiles: default
+  Schedule: 'true'
+  ScheduleCron: 'cron(0 7 ? * MON,THU *)'
+  NotifyOnStart: 'true'
+  NotifyOnSuccess: 'true'
+  BuildType: 'medium'
+```
+
+----
+
 ### Replaced our legacy build system (Jenkins)
 - ✅ More feature rich
 - ✅ Just in time builds
@@ -508,14 +531,29 @@ Finished in 9 minutes 39 seconds (files took 2.02 seconds to load)
 
 ----
 
-### Building on our Builds
+### Results
 - By the end of this, I felt reasonably proficient with Sceptre and CloudFormation
 - Leverage git tags in our applications
 
+---- 
+
+### Part 2: Questions?
+
 ---
 
-## Current effort: ECS
-- Building Elastic Container Service ECS stack (DEV)
+## Part 3: Building on our Builds!
+
+----
+
+### Our Migration Goal
+
+- EC2 Servers --> Elastic Container Service (ECS) Containers
+- Persistent Resources --> Discard and Recreate resources
+
+----
+
+### Current effort: Build an ECS stack for DEV
+- Building Elastic Container Service ECS stack
   - Run our services as containers
 - Using the published docker images
 - Auto-deploy to DEV stack at the end of the build
@@ -703,6 +741,10 @@ Note that the ecs-prd image has migrated
 
 ### Resources Created without Infrastructure as Code
 - 🛠️ RDS Database
+
+----
+
+### Part 3: Questions?
 
 ---
 
