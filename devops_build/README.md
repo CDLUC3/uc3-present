@@ -247,6 +247,7 @@ Triggers:
 
 ### Resources Created without Infrastructure as Code
 - 🛠️ AWS Connector for GitHub
+  - uses OAUTH style approval through web interface
 
 ----
 
