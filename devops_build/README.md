@@ -4,6 +4,8 @@
 - Software Developer, California Digital Library
 - https://github.com/terrywbrady
 
+<img alt="QR Code for Presentation" src="images/qrcode_merritt.uc3dev.cdlib.org.png" height="200px"/>
+
 ---
 
 ## DevOps Journey
@@ -91,6 +93,13 @@
 - Resources moving from centralized account to team-specific accounts
   - Dev teams will have console access 
 - Everything in production will be created with infrastructure as code
+
+----
+
+### Infrastructure as Code at CDL
+- [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+- [Sceptre](https://docs.sceptre-project.org/latest/)
+- [jinja2 templates](https://jinja.palletsprojects.com/en/stable/templates/)
 
 ---
 
@@ -248,14 +257,6 @@ Triggers:
 ### Resources Created without Infrastructure as Code
 - 🛠️ AWS Connector for GitHub
   - uses OAUTH style approval through web interface
-
-----
-
-### Infrastructure as Code at CDL
-- [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
-- [Sceptre](https://docs.sceptre-project.org/latest/)
-- [jinja2 templates](https://jinja.palletsprojects.com/en/stable/templates/)
-
 
 ----
 
@@ -548,9 +549,11 @@ parameters:
 
 ### Our Migration Goal
 
-- EC2 Servers --> Elastic Container Service (ECS) Containers
-- Deploy WAR files/Ruby Apps --> Deploy Container Images
-- Persistent Resources --> Discard and Recreate resources
+- Server --> Container
+  - EC2 --> ECS
+  - Deploy WAR files --> Deploy Images
+- Resources
+  - Persistent --> Discard and Recreate
 
 ----
 
@@ -781,3 +784,5 @@ Note that the ecs-prd image has migrated
 - Terry Brady
 - https://github.com/terrywbrady
 - **Terry Brady(UCOP-CDL)** on UCTech Slack
+
+<img alt="QR Code for Presentation" src="images/qrcode_merritt.uc3dev.cdlib.org.png" height="200px"/>
