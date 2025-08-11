@@ -4,9 +4,7 @@
 
 ---
 
-Fluent Bit documentation recommends [Rubular](https://rubular.com/) for regex testing.
-
-Scenario, we have a service named app that logs in the following format
+Scenario: we have a service named app that logs in the following format
 ```
 127.0.0.1 /foo/bar 200
 127.0.0.1 /foo/bar?hi=x 200

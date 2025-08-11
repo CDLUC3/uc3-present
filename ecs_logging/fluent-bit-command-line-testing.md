@@ -2,6 +2,8 @@
 
 - [ECS Logging in Merritt](README.md)
 
+---
+
 The code directory for `mrt-fluent-bit.conf` contains a few files to support command line testing of fluent bit rules.  These files have been constructed to enable testing without relying on OpenSearch or CloudWatch.
 
 ## test-driver-stdin.conf
@@ -85,7 +87,7 @@ Fluent Bit v1.9.10
 {"ecs.version": 22, "message": "hello"}
 ```
 
-Note that the record is categorized as `mrt-log4j`
+Note that the `log_source` for the record is categorized as `mrt-log4j`
 ```
 [0] stdin: [1754954664.201771042, {"ecs.version"=>22, "message"=>"hello", "container_name"=>"mysrvc", "container_id"=>"0001", "log_source"=>"mrt-log4j"}]
 ```
@@ -96,7 +98,7 @@ Note that the record is categorized as `mrt-log4j`
 127.0.0.1 - - [10/Jun/2025:00:01:32 -0700] "GET /state HTTP/1.1" 200 957
 ```
 
-Note that the fields are parsed and the record is tagged as `tomcat-access`
+Note that the fields are parsed and the `log_source` for the record is tagged as `tomcat-access`
 ```
 [0] stdin: [1754954762.399392629, {"host"=>"127.0.0.1", "user"=>"-", "time"=>"10/Jun/2025:00:01:32 -0700", "method"=>"GET", "path"=>"/state", "response_code"=>"200", "size"=>"957", "container_name"=>"mysrvc", "container_id"=>"0001", "log_source"=>"tomcat-access"}]
 ```
@@ -107,7 +109,7 @@ Note that the fields are parsed and the record is tagged as `tomcat-access`
 06-Aug-2025 19:42:47.893 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [25626] milliseconds
 ```
 
-Note that the fields are parsed and tagged as `catalina`
+Note that the fields are parsed and the  `log_source` for the record is tagged as `catalina`
 ```
 [0] stdin: [1754954999.202767961, {"time"=>"06-Aug-2025 19:42:47.893", "log_level"=>"INFO", "thread_name"=>"main", "log"=>"org.apache.catalina.startup.Catalina.start Server startup in [25626] milliseconds", "container_name"=>"mysrvc", "container_id"=>"0001", "log_source"=>"catalina"}]
 ```
@@ -116,6 +118,8 @@ Note that the fields are parsed and tagged as `catalina`
 ```
 The quick brown fox jumped over the lazy dogs
 ```
+
+Note that the `log_source` for the record is categorized as `stdout`.
 
 Pay particular attention to this line, note the `cw.mysrvc.*`.  This is a simulation of the record being processed by the cloudwatch output rule.
 ```

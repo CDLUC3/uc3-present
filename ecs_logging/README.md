@@ -1,5 +1,7 @@
 # ECS Logging in Merritt with Fluent Bit
 
+---
+
 The [Merritt System](https://github.com/CDLUC3/mrt-doc/blob/main/README.md) is migrating from EC2-based microservices to ECS-base microservice containers. As a result, the Merritt team will no longer be able to rely on long-living log files.
 
 This site describes how the Merritt team migrated our logging infrastructure from log files to cloud-based logging solutions in AWS.

@@ -181,9 +181,6 @@ Records that are processed with this workflow have been tagged with `myservicena
     tls On
 ```
 
-
-## What Happens to Log Records in
-
 ---
 
 [NEXT](what-is-happening-in-fluent-bit.md)
