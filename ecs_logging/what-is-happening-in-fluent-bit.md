@@ -14,6 +14,10 @@ Scenario: we have a service named app that logs in the following format
 After firelens processing, the following will be generated.
 
 Note that the fluentd logging driver adds: container_name, container_id.
+
+> [!NOTE]
+> The record seems to get tagged with `appname-firelens` somewhere in the workflow although it is not clear where that happens.
+
 ```
 
 {
@@ -73,8 +77,8 @@ After running this customization, the following is generated
   "ecs_task_arn": "...",
   "ecs_task_definition": "...",
   "host": "127.0.0.1",
-  "path":	"/foo/bar",
-  "code":	200
+  "path": "/foo/bar",
+  "code": 200
 }
 {
   "container_name": "...",
@@ -83,8 +87,8 @@ After running this customization, the following is generated
   "ecs_task_arn": "...",
   "ecs_task_definition": "...",
   "host": "127.0.0.1",
-  "path":	"/foo/bar?hi=x",
-  "code":	200
+  "path": "/foo/bar?hi=x",
+  "code": 200
 }
 {
   "container_name": "...",
@@ -93,8 +97,8 @@ After running this customization, the following is generated
   "ecs_task_arn": "...",
   "ecs_task_definition": "...",
   "host": "127.0.0.1",
-  "path":	"/bar/foo",
-  "code":	404
+  "path": "/bar/foo",
+  "code": 404
 }
 ```
 
