@@ -16,6 +16,10 @@ Scenario, we have a service named app that logs in the following format
 After firelens processing, the following will be generated.
 
 Note that the fluentd logging driver adds: container_name, container_id.
+
+> [!NOTE]
+> The record seems to get tagged with `appname_firelens` somewhere in the workflow although it is not clear where that happens.
+
 ```
 
 {
