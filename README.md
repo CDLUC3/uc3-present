@@ -1,6 +1,9 @@
 # uc3-present
 Git based UC3 team presentations
 
+## CDL Presentations
+- [ECS Logging in Merritt with Fluent Bit](https://github.com/CDLUC3/uc3-present/blob/main/ecs_logging/README.md)
+
 ## UCTech 2025
 - [ECS Logging in Merritt with Fluent Bit](ecs_logging)
 - [On the Journey to DevOps, Start with Your Build](https://merritt.uc3dev.cdlib.org/present/devops_build/README.html)
