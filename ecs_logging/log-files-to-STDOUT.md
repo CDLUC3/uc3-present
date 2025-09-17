@@ -4,7 +4,7 @@
 
 ---
 
-All Merritt tomcat services are derivied from a common [tomcat Docker image](https://github.com/CDLUC3/merritt-docker/blob/main/mrt-inttest-services/merritt-tomcat/Dockerfile).
+All Merritt tomcat services are derived from a common [tomcat Docker image](https://github.com/CDLUC3/merritt-docker/blob/main/mrt-inttest-services/merritt-tomcat/Dockerfile).
 
 ```Dockerile
 # Base image for all Merritt tomcat usage
