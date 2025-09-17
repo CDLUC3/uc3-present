@@ -106,7 +106,7 @@ This data will be sent to the Merritt OpenSearch collection.
 
 ### Other notes
 - Fluent bit provides a json parser named `docker` that will preserve json input.
-- Custom filters can be applied based on the presence/abscense of json properties.
+- Custom filters can be applied based on the presence/absense of json properties.
 - Regex tests will return false if a property contains a json object
 - OpenSearch will reject records if type conflicts are introduced
   - `{"foo": "bar"}`
