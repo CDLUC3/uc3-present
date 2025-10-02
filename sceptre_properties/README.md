@@ -59,7 +59,7 @@ sceptre_user_data:
 - Cannot define 100% of properties this way, cloud formation needs at least a minimum of one property to establish identity
 
 ### When to use it
-- Values that are be re-used across multiple resources
+- Values that are being re-used across multiple resources
 - Complex hash data
 
 ---
