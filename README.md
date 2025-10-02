@@ -3,6 +3,7 @@ Git based UC3 team presentations
 
 ## CDL Presentations
 - [ECS Logging in Merritt with Fluent Bit](https://github.com/CDLUC3/uc3-present/blob/main/ecs_logging/README.md)
+- [Rationale for Placement of Sceptre Properties](https://github.com/CDLUC3/uc3-present/tree/main/sceptre_properties#readme)
 
 ## UCTech 2025
 - [ECS Logging in Merritt with Fluent Bit](ecs_logging)
