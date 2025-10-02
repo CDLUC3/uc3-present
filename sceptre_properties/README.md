@@ -113,10 +113,10 @@ parameters:
   foo: {{stack_group_config.foo}}
 ```
 
-## Limitations
+### Limitations
 - TBD
 
-## When to use
+### When to use
 - TBD
 
 ---
@@ -141,6 +141,9 @@ parameters:
   Properties:
     Memory: 1024
 ```
+
+### When to Use
+- TBD
 
 ### Limitations
 - Not re-usable
