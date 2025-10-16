@@ -55,8 +55,8 @@ sceptre_user_data:
 - Cannot be used in conjunction with an environmental config.yaml.  This supersedes that structure.
 - I wish sceptre could merge config.yaml user_data and resource.yaml user_data
 > [!NOTE]
-> Amy shared `sceptre_user_data_inheritance: merge` which might accomplish this
-> TODO: try this out
+> Amy shared `sceptre_user_data_inheritance: merge` which should accomplish this
+> See https://docs.sceptre-project.org/latest/docs/stack_config.html#sceptre-user-data-inheritance
 
 ### When to use it
 - Complex hashes that apply to only one resource
