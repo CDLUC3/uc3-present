@@ -1,5 +1,18 @@
 # Rationale for Placement of Sceptre Properties
 
+## The Problem
+- Sceptre provides a framework for working with CloudFormation
+- CloudFormation conditionals and iteration are very limited
+- CloudFormation parameters supports lists but not hashes
+- Jinja2 templates solve many of these issues
+  - Too many ways to solve the same problem
+- Is there a best practice to be found, or is every situation different
+
+## Trade-offs
+- Template code duplication
+- Property value duplication
+- Cloud formation dependencies
+
 ---
 
 ## As a sceptre stack parameter in a resource config file
