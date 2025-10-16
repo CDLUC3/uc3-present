@@ -15,9 +15,13 @@ parameters:
 
 ### Benefits
 - Establishes a clear set of cloud formation dependencies
-- Can be accessed via sceptre_user_data.stack_parameters
-- Default values can be inferred (unless you use sceptre_user_data.stack_parameters)
+- Can be accessed via `{{sceptre_user_data.stack_parameters}}`
+- Default values can be inferred
+  - Defaults are honored in CloudFormation
+  - BUT, defaults are not used in `{{sceptre_user_data.stack_parameters}}`
 - Can enumerate allowable values
+  - In cloud formation
+  - Allowable values not enforce in `{{sceptre_user_data.stack_parameters}}`
 - Can be used in CloudFormation dependencies
 
 ---
@@ -36,6 +40,7 @@ sceptre_user_data:
 ```
 ### Limitations
 - Cannot be used in conjunction with an environmental config.yaml.  This supersedes that structure.
+- I wish sceptre could merge config.yaml user_data and resource.yaml user_data
 
 ### When to use it
 - Complex hashes that apply to only one resource
@@ -143,7 +148,8 @@ parameters:
 ```
 
 ### When to Use
-- TBD
+- Value is a specific enumerated value that is only applicable in the context of a single cloud formation template
+- The value would be difficult to interpret in a config file, its context is only meaningful within a template
 
 ### Limitations
 - Not re-usable
