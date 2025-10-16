@@ -54,6 +54,9 @@ sceptre_user_data:
 ### Limitations
 - Cannot be used in conjunction with an environmental config.yaml.  This supersedes that structure.
 - I wish sceptre could merge config.yaml user_data and resource.yaml user_data
+> [!NOTE]
+> Amy shared `sceptre_user_data_inheritance: merge` which might accomplish this
+> TODO: try this out
 
 ### When to use it
 - Complex hashes that apply to only one resource
@@ -143,6 +146,10 @@ parameters:
 
 - https://docs.sceptre-project.org/latest/docs/cli.html?highlight=--var-file#variable-handling
 - Barbara and the PAD team use this approach
+
+> [!NOTE]
+> Amy mentioned that the PAD stacks are designed to fail when a variable file is missing
+> This ensures that the stack is not accidentally run without required variables
 
 ### When to Use
 - TBD
