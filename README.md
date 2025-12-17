@@ -18,6 +18,7 @@ Git based UC3 team presentations
 
 ## Usage Notes
 
+
 ### Create Animated Gifs
 ```bash
 brew install ffmpeg
