@@ -3,8 +3,8 @@
 - Terry Brady
 - Mark Reyes
 
-https://github.com/CDLUC3/mrt-zk
-
+- https://github.com/CDLUC3/mrt-zk
+- [Presentation Source](https://github.com/CDLUC3/uc3-present/blob/main/zk/zk.md)
 ---
 
 ## Apache Zookeeper
