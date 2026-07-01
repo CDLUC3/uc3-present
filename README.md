@@ -6,7 +6,6 @@ Git based UC3 team presentations
 - [Rationale for Placement of Sceptre Properties](https://github.com/CDLUC3/uc3-present/tree/main/sceptre_properties#readme)
 
 ## UCTech 2025
-- [ECS Logging in Merritt with Fluent Bit](ecs_logging)
 - [On the Journey to DevOps, Start with Your Build](https://merritt.uc3dev.cdlib.org/present/devops_build/README.html)
 
 ## Team Presentations
